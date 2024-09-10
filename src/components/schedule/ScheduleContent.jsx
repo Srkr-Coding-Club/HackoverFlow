@@ -12,7 +12,6 @@ const ScheduleContent = (props) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            console.log("Element is now visible");
             entry.target.classList.remove("in-visible");
             entry.target.classList.add(animate);
             observer.unobserve(entry.target); // Stop observing once the element is visible
