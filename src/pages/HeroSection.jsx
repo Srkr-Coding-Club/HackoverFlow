@@ -30,7 +30,8 @@ const Banner = () => {
   return (
     <div className="flex flex-col h-screen md:flex-row items-center bg-gradient-to-r from-gray-800 to-gray-900 text-white py-10  px-5">
       <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left md:ml-10">
-        <h1 className="text-5xl font-bold mt-6 mb-4">HACK OVERFLOW</h1>
+        {/* <h1 className="text-5xl font-bold mt-6 mb-4">HACK OVERFLOW</h1> */}
+        <h1 className="text-5xl font-semibold mt-6 mb-4 titles">HACK OVERFLOW</h1>
         <p className="text-2xl mb-2 font-bold">25-26TH OCT</p>
         <p className="text-xl mb-8">HACK FOR A CHANGE !</p>
         <Countdown date={countdownDate} renderer={renderer} />

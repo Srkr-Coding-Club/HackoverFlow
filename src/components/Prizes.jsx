@@ -1,3 +1,4 @@
+
 import React from "react";
 import PriceItem from "./prizes/PriceItem";
 
@@ -10,7 +11,7 @@ const Prizes = () => {
           <PriceItem rank={1} />
           <PriceItem rank={2} />
           <PriceItem rank={3} />
-          <PriceItem />
+          {/* <PriceItem /> */}
         </div>
       </div>
     </>

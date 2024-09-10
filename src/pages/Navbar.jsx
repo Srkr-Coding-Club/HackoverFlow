@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="fixed w-full z-20 border-gray-200 bg-gray-900 px-4 py-2.5 ">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <a href="/" className="flex items-center">
-          <img src="/logo.png" width={100} height={100} className="mr-3 rounded-[50%]" alt="Logo" />
+          <img src="/logo.png" width={50} height={50} className="mr-3" alt="Logo" />
         </a>
         <button 
           onClick={() => setIsOpen(!isOpen)}

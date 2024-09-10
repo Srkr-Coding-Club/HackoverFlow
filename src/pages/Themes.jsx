@@ -1,16 +1,16 @@
 
 
 const cardData = [
-  { id: 1, title: "Card 1", imgSrc: "/bgdoctor.png" },
-  { id: 2, title: "Card 2", imgSrc: "/bgwomen.png" },
-  { id: 3, title: "Card 3", imgSrc: "/bgfarmer.png" },
+  { id: 1, title: "Health Care", imgSrc: "/bgdoctor.png" },
+  { id: 2, title: "Women And Child Safety", imgSrc: "/bgwomen.png" },
+  { id: 3, title: "Agriculture", imgSrc: "/bgfarmer.png" },
   
 ];
 
 const Themes = () => {
   return (
     <div className="min-h-auto bg-gradient-to-r from-gray-800 to-gray-900 py-8">
-      <h1 className="text-4xl text-white text-center mb-8">THEMES</h1>
+      <h1 className="text-4xl text-white text-center mb-8 titles">THEMES</h1>
       <div className="flex flex-wrap justify-center gap-6 p-4">
         {cardData.map((card) => (
           <div

@@ -26,9 +26,9 @@ const PriceItem = (props) => {
           $375.00.
         </li>
       </ul>
-      <button className="absolute w-1/2 p-2 max-[100px]:p1 text-sm text-white bg-black rounded-3xl bottom-4">
+      {/* <button className="absolute w-1/2 p-2 max-[100px]:p1 text-sm text-white bg-black rounded-3xl bottom-4">
         More
-      </button>
+      </button> */}
       <div className="absolute w-[150%] rounded-full aspect-square bg-[#232323] -z-10 translate-y-[-65%]"></div>
     </div>
   );
