@@ -3,47 +3,42 @@ import React from "react";
 import RightSchedule from "./schedule/RightSchedule";
 import LeftSchedule from "./schedule/LeftSchedule";
 
+import events from "../constants/timelinelist";
+
 const Schedule = () => {
   return (
     <>
-      <div className="flex bg-gradient-to-r from-gray-800 to-gray-900 flex-col items-center w-full">
+      <div className="flex flex-col items-center w-full bg-gradient-to-r from-gray-800 to-gray-900">
         <h1 className="my-20 text-5xl font-semibold text-white titles">
           Schedule
         </h1>
         <div className="w-[30rem] max-sm:w-[20rem] flex flex-col items-center">
-          <RightSchedule
-            idx={0}
-            time={"15th Feb 5:3O PM"}
-            title={"Workshops Starts"}
-            description={
-              " We'll review your application and will let you know. We'll review your application and will let you know."
+          {events.map((event, index) => {
+            if (index % 2 == 0) {
+              return (
+                <RightSchedule
+                  key={index}
+                  idx={index}
+                  time={event.time}
+                  title={event.title}
+                  description={event.description}
+                  isLast={index == events.length - 1}
+                />
+              );
+            } else {
+        
+              return (
+                <LeftSchedule
+                  key={index}
+                  idx={index}
+                  time={event.time}
+                  title={event.title}
+                  description={event.description}
+                  isLast={index == events.length - 1}
+                />
+              );
             }
-          />
-          <LeftSchedule
-            idx={1}
-            time={"15th Feb 5:3O PM"}
-            title={"Workshops Starts"}
-            description={
-              " We'll review your application and will let you know. We'll review your application and will let you know."
-            }
-          />
-          <RightSchedule
-            idx={2}
-            time={"15th Feb 5:3O PM"}
-            title={"Workshops Starts"}
-            description={
-              " We'll review your application and will let you know. We'll review your application and will let you know."
-            }
-          />
-          <LeftSchedule
-            isLast={true}
-            idx={3}
-            time={"15th Feb 5:3O PM"}
-            title={"Workshops Starts"}
-            description={
-              " We'll review your application and will let you know. We'll review your application and will let you know."
-            }
-          />
+          })}
         </div>
       </div>
     </>
