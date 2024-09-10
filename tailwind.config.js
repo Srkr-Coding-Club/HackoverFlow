@@ -3,7 +3,12 @@ export default {
   mode: "jit",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      dropShadow: {
+        "3xl": "0 35px 35px rgba(241, 197, 90, 0.66) ",
+        
+      }
+    },
   },
   plugins: [],
 };

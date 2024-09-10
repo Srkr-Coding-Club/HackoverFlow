@@ -13,7 +13,7 @@ const Popup = () => {
       const currentTime = new Date().getTime();
       const storedTime = parseInt(storedTimestamp, 10);
 
-      if (currentTime - storedTime < 60 * 1000) {
+      if (currentTime - storedTime < 300 * 1000) {
         setIsChecked(true);
         return;
       } else {
