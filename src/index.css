@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Quicksand:wght@300..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+  
+}
+
+body {
+  /* background: linear-gradient(to right,  #4B5563,#1F2937); */
+  overflow-x: hidden;
+}
+
+.titles {
+  font-family: "Ga Maamli", sans-serif;
+}
+
+.glassy-div {
+  background: rgba(39, 39, 42, 0.43);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(39, 39, 42, 0.5);
+  backdrop-filter: blur(9.1px);
+  -webkit-backdrop-filter: blur(9.1px);
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    overflow: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    overflow: 1;
+  }
+}
+
+.in-visible {
+  opacity: 0;
+}
+
+.animate-right {
+  animation: slide-left 1s ease-in-out forwards;
+}
+
+.animate-left {
+  animation: slide-right 1s ease-in-out;
+}
