@@ -10,7 +10,7 @@ const AboutSection = () => {
   return (
     <div
       ref={ref}
-      className="px-5 py-10 text-white bg-gradient-to-r from-gray-800 to-gray-900"
+      className="px-5 py-10 text-white "
     >
       <h2 className="mb-10 text-5xl font-bold text-center titles">
         What is HackOverFlow

@@ -8,6 +8,7 @@ import Schedule from "./components/Schedule";
 import Sponcers from "./components/Sponsors";
 import Prizes from "./components/Prizes";
 import Popup from "./pages/Popup";
+import Query from "./components/Query";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Schedule />
       <Prizes />
       <Sponcers />
+      <Query />
       <Footer />
     </>
   );

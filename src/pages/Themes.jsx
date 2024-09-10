@@ -6,7 +6,7 @@ const cardData = [
 
 const Themes = () => {
   return (
-    <div className="min-h-auto bg-gradient-to-r from-gray-800 to-gray-900 py-8">
+    <div className="min-h-auto py-8">
       <h1 className="text-4xl text-white text-center mb-8 titles">THEMES</h1>
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-center gap-6">

@@ -8,8 +8,8 @@ import LinkedIn from "../assets/linkedin-svgrepo-com.svg";
 const Footer = () => {
   return (
     <>
-      <footer className="flex flex-col items-center w-screen h-56  bg-gradient-to-r from-gray-800 to-gray-900 justify-between ">
-        <div className="flex items-center gap-3 m-8">
+      <footer className="flex flex-col items-center w-screen h-48 justify-between ">
+        <div className="flex items-center gap-3 mt-8">
           <img className="h-4" src={Discord} />
           <span className="font-semibold text-white">/</span>
           <img className="h-4" src={YouTube} />
@@ -20,14 +20,12 @@ const Footer = () => {
           <span className="font-semibold text-white">/</span>
           <img className="h-4" src={LinkedIn} />
         </div>
-        <div className="flex flex-col items-center gap-6 ">
-          <div className="flex w-44">
-            <img src={"https://www.duhacks.tech/assets/images/dsc.png"}></img>
-          </div>
-          <p className="m-2 text-xs text-white ">
-            Copyrights © 2023. All rights reserved by DUHacks 3.0
-          </p>
-        </div>
+        <img
+          src={"https://www.duhacks.tech/assets/images/dsc.png"}
+          className=" w-44"></img>
+        <p className="m-2 text-xs text-white ">
+          Copyrights © 2023. All rights reserved by DUHacks 3.0
+        </p>
       </footer>
     </>
   );
