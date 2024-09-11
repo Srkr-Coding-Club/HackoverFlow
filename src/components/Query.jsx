@@ -3,24 +3,24 @@ import queryList from "../constants/querylist";
 
 const Query = () => {
   return (
-    <div className=" my-40 w-full  flex flex-row max-lg:flex-col max-lg:items-center justify-center gap-10">
-      <div className=" w-5/12 max-sm:w-full flex flex-col justify-between max-sm:items-center items-end ">
-        <div className="flex flex-col gap-10 max-lg:items-center items-end">
-          <lable className="titles w-full text-center font-semibold text-5xl text-white">
+    <div className="flex flex-row justify-center w-full gap-10 my-40 max-lg:flex-col max-lg:items-center">
+      <div className="flex flex-col items-end justify-between w-5/12 max-sm:w-full max-sm:items-center">
+        <div className="flex flex-col items-end gap-10 max-lg:items-center">
+          <lable className="w-full text-5xl font-semibold text-center text-white titles">
             Have a query ?
           </lable>
-          <span className=" text-white max-lg:text-center w-5/6  ">
+          <span className="w-5/6 text-white max-lg:text-center">
             Join with DUHacks and experience the breeze of hackathon with us.
           </span>
         </div>
-        <div className="h-full flex justify-center items-center w-full max-lg:hidden">
+        <div className="flex items-center justify-center w-full h-full max-lg:hidden">
           <img
             src="https://www.duhacks.tech/assets/images/mascot.svg"
             className=" h-80 scale-x-[-1]"
           />
         </div>
       </div>
-      <div className=" w-5/12 max-lg:w-10/12 ">
+      <div className="w-5/12 max-lg:w-10/12">
         <hr className="h-[1px] border-gray-700 border-0 border-t-[1px] "></hr>
         {queryList.map((query, index) => {
           return (
@@ -41,15 +41,16 @@ const QueryItem = (props) => {
 
   return (
     <>
-      <div className=" w-full flex justify-between items-center py-6">
-        <lable className=" font-medium text-lg text-white">
+      <div
+        className="flex items-center justify-between w-full py-6 cursor-pointer "
+        onClick={() => setShoeAns(!showAns)}>
+        <lable className="text-lg font-medium text-white">
           {props.question}
         </lable>
         <span
-          className={`material-symbols-outlined ml-4  text-white cursor-pointer flex justify-center transition-all duration-300  ${
+          className={`material-symbols-outlined ml-4  text-white flex justify-center transition-all duration-300  ${
             showAns ? "rotate-[-90deg]" : "rotate-[90deg]"
-          }`}
-          onClick={() => setShoeAns(!showAns)}>
+          }`}>
           arrow_back_ios
         </span>
       </div>
