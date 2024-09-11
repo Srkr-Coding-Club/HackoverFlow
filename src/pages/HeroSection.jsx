@@ -27,9 +27,9 @@ const Banner = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen md:flex-row items-center bg-gradient-to-r from-gray-800 to-gray-900 text-white py-10 px-5">
+    <div className="flex flex-col h-full md:flex-row items-center bg-gradient-to-r from-gray-800 to-gray-900 text-white py-10 px-5">
       <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left md:ml-10">
-        <h1 className="text-6xl font-semibold mt-6 mb-4 titles">HACK OVERFLOW</h1>
+        <h1 className="text-6xl font-semibold mt-8 mb-4 titles">HACK OVERFLOW</h1>
         <p className="text-2xl mb-2 font-bold">25 - 26TH OCT</p>
         <p className="text-xl mb-8">HACK FOR A CHANGE !</p>
         <Countdown date={countdownDate} renderer={renderer} />
@@ -48,7 +48,7 @@ const Banner = () => {
 
           {/* Register Now Button */}
           <a
-            href="https://"
+            href="https://scc-hackoverflow.vercel.app"
             className="px-10 py-3 bg-white text-gray-900 font-bold rounded-full shadow-lg hover:bg-gray-900 hover:text-white hover:border-white hover:border-2 transition-colors duration-300"
           >
             Register Now
