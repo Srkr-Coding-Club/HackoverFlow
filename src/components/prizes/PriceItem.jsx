@@ -3,9 +3,9 @@ import React from "react";
 const PriceItem = (props) => {
   const ranks = {
     0: "https://www.duhacks.tech/_next/image?url=https%3A%2F%2Fraw.githubusercontent.com%2FTarikul-Islam-Anik%2FAnimated-Fluent-Emojis%2Fmaster%2FEmojis%2FActivities%2FSparkles.png&w=128&q=75",
-    1: "https://www.duhacks.tech/_next/image?url=https%3A%2F%2Fraw.githubusercontent.com%2FTarikul-Islam-Anik%2FAnimated-Fluent-Emojis%2Fmaster%2FEmojis%2FActivities%2F1st%2520Place%2520Medal.png&w=256&q=75",
-    2: "https://www.duhacks.tech/_next/image?url=https%3A%2F%2Fraw.githubusercontent.com%2FTarikul-Islam-Anik%2FAnimated-Fluent-Emojis%2Fmaster%2FEmojis%2FActivities%2F2nd%2520Place%2520Medal.png&w=256&q=75",
-    3: "https://www.duhacks.tech/_next/image?url=https%3A%2F%2Fraw.githubusercontent.com%2FTarikul-Islam-Anik%2FAnimated-Fluent-Emojis%2Fmaster%2FEmojis%2FActivities%2F3rd%2520Place%2520Medal.png&w=256&q=75",
+    1: "/1st_Place_Medal.webp",
+    2: "/2nd_Place_Medal.webp",
+    3: "/3rd_Place_Medal.webp",
   };
 
   const iconNum = props.rank || 0;
