@@ -8,15 +8,11 @@ const AboutSection = () => {
   });
 
   return (
-    <div
-      ref={ref}
-      className="px-5 py-10 text-white "
-      id="about"
-    >
+    <div ref={ref} className="px-5 py-10 text-white " id="about">
       <h2 className="mb-10 text-5xl font-bold text-center titles">
         What is HackOverFlow
       </h2>
-      <div className="flex flex-col items-center justify-center space-y-8 md:flex-row md:space-y-0 md:space-x-8">
+      <div className="flex flex-col items-center justify-center space-y-8 font-bold md:flex-row md:space-y-0 md:space-x-8">
         <div className="flex flex-col items-center p-4 text-center bg-gray-700 rounded-lg w-52">
           {inView && (
             <CountUp end={3} duration={3} className="text-4xl text-cyan-500" />
@@ -40,7 +36,7 @@ const AboutSection = () => {
           <span className="text-xl">Participants</span>
         </div>
       </div>
-      <div className="grid gap-8 mt-10 md:grid-cols-2">
+      <div className="grid gap-8 mt-10 font-medium md:grid-cols-2">
         <div className="h-full p-6 overflow-y-auto bg-gray-700 rounded-lg ">
           <p className="mb-4 text-lg">
             Getting into a loop of ideas, but finding out where to showcase
