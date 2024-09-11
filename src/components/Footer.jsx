@@ -17,10 +17,10 @@ const Footer = () => {
           <a href="https://youtube.com/@SRKRCODINGCLUB?feature=shared" target="_blank" rel="noopener noreferrer">
             <img className="h-4" src={YouTube} alt="YouTube" />
           </a>
-          <span className="font-semibold text-white">/</span>
+          {/* <span className="font-semibold text-white">/</span>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
             <img className="h-4" src={Twitter} alt="Twitter" />
-          </a>
+          </a> */}
           <span className="font-semibold text-white">/</span>
           <a href="https://instagram.com/srkr_coding_club?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
             <img className="h-4" src={Instagram} alt="Instagram" />
@@ -35,9 +35,9 @@ const Footer = () => {
           className="w-44"
           alt="SRKR logo"
         />
-        <p className="m-2 text-xs text-white ">
+        {/* <p className="m-2 text-xs text-balance text-white ">
           Copyrights © 2024. All rights reserved by SRKR CODING CLUB
-        </p>
+        </p> */}
       </footer>
     </>
   );
