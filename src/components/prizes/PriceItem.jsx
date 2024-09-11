@@ -24,15 +24,15 @@ const PriceItem = (props) => {
   const awards = {
     1: [
       "Cash prize of Rs.15000",
-      "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
+      "Awarded to the team  with the most innovative, impactful, or technically impressive project. The cash prize is intended to recognize outstanding contributions and encourage continued innovation in the field.",
     ],
     2: [
       "Cash prize of Rs.9000",
-      "1-year subscription to JetBrains products",
+      "Awarded to the team with the second-best project, showcasing strong creativity, technical skill, and impact. This prize acknowledges significant achievement and excellence in the competition.",
     ],
     3: [
       "Cash prize of Rs.6000",
-      "XYZ Hackathon goodies and T-shirt",
+      "Awarded to the team with the third-best project, demonstrating commendable innovation, technical proficiency, and impact. This prize highlights notable achievement and contributes to encouraging future endeavors.",
     ],
     0: [
       "Participation certificate",
