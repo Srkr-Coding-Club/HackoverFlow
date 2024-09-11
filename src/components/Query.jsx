@@ -10,7 +10,7 @@ const Query = () => {
             Have a query ?
           </lable>
           <span className="w-5/6 text-white max-lg:text-center">
-            Join with DUHacks and experience the breeze of hackathon with us.
+            Join with Hackoverflow and experience the breeze of hackathon with us.
           </span>
         </div>
         <div className="flex items-center justify-center w-full h-full max-lg:hidden">
