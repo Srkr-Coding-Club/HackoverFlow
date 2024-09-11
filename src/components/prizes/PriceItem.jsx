@@ -24,6 +24,7 @@ const PriceItem = (props) => {
   const awards = {
     1: [
       "Cash prize of Rs.15000",
+<<<<<<< HEAD
       "Awarded to the team with the most innovative, impactful, or technically impressive project. The cash prize is intended to recognize outstanding contributions and encourage continued innovation in the field.",
     ],
     2: [
@@ -33,6 +34,17 @@ const PriceItem = (props) => {
     3: [
       "Cash prize of Rs.6000",
       "Awarded to the team with the third-best project, demonstrating commendable innovation, technical proficiency, and impact. This prize highlights notable achievement and contributes to encouraging future endeavors",
+=======
+      "Awarded to the team  with the most innovative, impactful, or technically impressive project. The cash prize is intended to recognize outstanding contributions and encourage continued innovation in the field.",
+    ],
+    2: [
+      "Cash prize of Rs.9000",
+      "Awarded to the team with the second-best project, showcasing strong creativity, technical skill, and impact. This prize acknowledges significant achievement and excellence in the competition.",
+    ],
+    3: [
+      "Cash prize of Rs.6000",
+      "Awarded to the team with the third-best project, demonstrating commendable innovation, technical proficiency, and impact. This prize highlights notable achievement and contributes to encouraging future endeavors.",
+>>>>>>> 6e5bd4094f6725d17126e718d2172eb1938822b2
     ],
     0: [
       "Participation certificate",
