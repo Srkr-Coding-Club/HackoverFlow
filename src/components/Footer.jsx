@@ -31,13 +31,13 @@ const Footer = () => {
           </a>
         </div>
         <img
-          src={"https://www.duhacks.tech/assets/images/dsc.png"}
-          className="w-44"
+          src={"/footerpic.png"}
+          className="w-52 -mt-6"
           alt="SRKR logo"
         />
-        {/* <p className="m-2 text-xs text-balance text-white ">
+        <p className="m-2 text-xs text-balance text-white ">
           Copyrights © 2024. All rights reserved by SRKR CODING CLUB
-        </p> */}
+        </p>
       </footer>
     </>
   );
