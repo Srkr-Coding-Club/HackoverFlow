@@ -1,5 +1,5 @@
 import React from "react";
-import Discord from "../assets/discord-icon-svgrepo-com.svg";
+import Facebook from "../assets/facebook.svg";
 import YouTube from "../assets/icons8-youtube.svg";
 import Twitter from "../assets/icons8-twitterx.svg";
 import Instagram from "../assets/icons8-instagram.svg";
@@ -10,19 +10,31 @@ const Footer = () => {
     <>
       <footer className="flex flex-col items-center w-screen h-48 justify-between ">
         <div className="flex items-center gap-3 mt-8">
-          <img className="h-4" src={Discord} />
+          <a href="https://www.facebook.com/profile.php?id=61552039587620&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+            <img className="h-4" src={Facebook} alt="Discord" />
+          </a>
           <span className="font-semibold text-white">/</span>
-          <img className="h-4" src={YouTube} />
+          <a href="https://youtube.com/@SRKRCODINGCLUB?feature=shared" target="_blank" rel="noopener noreferrer">
+            <img className="h-4" src={YouTube} alt="YouTube" />
+          </a>
           <span className="font-semibold text-white">/</span>
-          <img className="h-4" src={Twitter} />
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <img className="h-4" src={Twitter} alt="Twitter" />
+          </a>
           <span className="font-semibold text-white">/</span>
-          <img className="h-4" src={Instagram} />
+          <a href="https://instagram.com/srkr_coding_club?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+            <img className="h-4" src={Instagram} alt="Instagram" />
+          </a>
           <span className="font-semibold text-white">/</span>
-          <img className="h-4" src={LinkedIn} />
+          <a href="in/srkr-coding-club-549799293" target="_blank" rel="noopener noreferrer">
+            <img className="h-4" src={LinkedIn} alt="LinkedIn" />
+          </a>
         </div>
         <img
           src={"https://www.duhacks.tech/assets/images/dsc.png"}
-          className=" w-44"></img>
+          className="w-44"
+          alt="DUHacks logo"
+        />
         <p className="m-2 text-xs text-white ">
           Copyrights © 2023. All rights reserved by DUHacks 3.0
         </p>

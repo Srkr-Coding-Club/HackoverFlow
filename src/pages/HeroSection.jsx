@@ -6,23 +6,24 @@ const Banner = () => {
   const renderer = ({ days, hours, minutes, seconds }) => {
     return (
       <div className="flex space-x-4 text-center">
-        <div className="flex flex-col items-center bg-black bg-opacity-30 p-3 md:p-4 rounded-xl">
-          <span className="text-6xl text-cyan-500 font-bold">{days}</span>
-          <span className="text-xl font-bold">Days</span>
-        </div>
-        <div className="flex flex-col items-center bg-black bg-opacity-30 p-0 md:p-3 rounded-xl md:p-4">
-          <span className="text-6xl text-pink-500 font-bold">{hours}</span>
-          <span className="text-xl font-bold">Hours</span>
-        </div>
-        <div className="flex flex-col items-center bg-black bg-opacity-30 p-0 md:p-3 rounded-xl md:p-4">
-          <span className="text-6xl text-purple-500 font-bold">{minutes}</span>
-          <span className="text-xl font-bold">Minutes</span>
-        </div>
-        <div className="flex flex-col items-center bg-black bg-opacity-30 p-0 md:p-3 rounded-xl md:p-4">
-          <span className="text-6xl text-orange-500 font-bold">{seconds}</span>
-          <span className="text-xl font-bold">Seconds</span>
-        </div>
+      <div className="flex flex-col items-center bg-black bg-opacity-30 p-2 md:p-4 rounded-xl">
+        <span className="text-4xl md:text-6xl text-cyan-500 font-bold">{days}</span>
+        <span className="text-lg md:text-xl font-bold">Days</span>
       </div>
+      <div className="flex flex-col items-center bg-black bg-opacity-30 p-2 md:p-4 rounded-xl">
+        <span className="text-4xl md:text-6xl text-pink-500 font-bold">{hours}</span>
+        <span className="text-lg md:text-xl font-bold">Hours</span>
+      </div>
+      <div className="flex flex-col items-center bg-black bg-opacity-30 p-2 md:p-4 rounded-xl">
+        <span className="text-4xl md:text-6xl text-purple-500 font-bold">{minutes}</span>
+        <span className="text-lg md:text-xl font-bold">Minutes</span>
+      </div>
+      <div className="flex flex-col items-center bg-black bg-opacity-30 p-2 md:p-4 rounded-xl">
+        <span className="text-4xl md:text-6xl text-orange-500 font-bold">{seconds}</span>
+        <span className="text-lg md:text-xl font-bold">Seconds</span>
+      </div>
+    </div>
+    
     );
   };
 
