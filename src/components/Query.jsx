@@ -15,8 +15,8 @@ const Query = () => {
         </div>
         <div className="h-full flex justify-center items-center w-full max-lg:hidden">
           <img
-            src="https://www.duhacks.tech/assets/images/mascot.svg"
-            className=" h-80 scale-x-[-1]"
+            src="/about.png"
+            className=" h-2/4 scale-x-[-1] drop-shadow-3xl"
           />
         </div>
       </div>
