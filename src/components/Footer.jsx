@@ -36,7 +36,7 @@ const Footer = () => {
           alt="DUHacks logo"
         />
         <p className="m-2 text-xs text-white ">
-          Copyrights © 2023. All rights reserved by DUHacks 3.0
+          Copyrights © 2024. All rights reserved by SRKR CODING CLUB
         </p>
       </footer>
     </>
