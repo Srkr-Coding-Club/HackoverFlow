@@ -3,7 +3,7 @@ import queryList from "../constants/querylist";
 
 const Query = () => {
   return (
-    <div className="flex flex-row justify-center w-full gap-10 my-40 max-lg:flex-col max-lg:items-center">
+    <div className="flex flex-row justify-center w-full gap-10 my-40 max-lg:flex-col max-lg:items-center" id="faq">
       <div className="flex flex-col items-end justify-between w-5/12 max-sm:w-full max-sm:items-center">
         <div className="flex flex-col items-end gap-10 max-lg:items-center">
           <lable className="w-full text-5xl font-semibold text-center text-white titles">

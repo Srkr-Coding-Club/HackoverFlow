@@ -11,6 +11,7 @@ const AboutSection = () => {
     <div
       ref={ref}
       className="px-5 py-10 text-white "
+      id="about"
     >
       <h2 className="mb-10 text-5xl font-bold text-center titles">
         What is HackOverFlow

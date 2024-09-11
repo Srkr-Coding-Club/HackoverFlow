@@ -9,30 +9,57 @@ const PriceItem = (props) => {
   };
 
   const iconNum = props.rank || 0;
-
   const icon = ranks[iconNum];
+
+  // New prize amounts for each rank
+  const prizes = {
+    1: "Rs.15000",
+    2: "Rs.9000",
+    3: "Rs.6000",
+  };
+
+  const prizeAmount = prizes[props.rank] || "Rs.5000"; // Default prize amount if no rank is passed
+
+  // Award descriptions for each rank
+  const awards = {
+    1: [
+      "Cash prize of Rs.15000",
+      "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
+    ],
+    2: [
+      "Cash prize of Rs.9000",
+      "1-year subscription to JetBrains products",
+    ],
+    3: [
+      "Cash prize of Rs.6000",
+      "XYZ Hackathon goodies and T-shirt",
+    ],
+    0: [
+      "Participation certificate",
+      "Access to exclusive webinars and talks",
+    ],
+  };
+
+  const awardList = awards[props.rank] || awards[0];
 
   return (
     <div
       className={`glassy-div w-[21rem] h-[29rem] max-[1100px]:w-[13.8rem] max-[1100px]:h-[20rem] flex flex-col items-center gap-4 max-[1100px]:p-1 p-1 rounded-3xl relative overflow-hidden m-4`}>
       <img className="w-[50%] mx-auto" src={icon}></img>
-      <ul className=" mt-[8%] max-[1100px]:mt-[2%] pl-[10%] text-[1.15rem] max-[1100px]:text-[0.8rem] text-white list-disc flex flex-col gap-2 h-[45%]">
-        <li>
-          Cash prize of <span className="text-blue-500 ">Rs.5000</span>
-        </li>
-        <li>
-          Wolfram award for a year of Wolfram|One Personal Edition plus a
-          one-year subscription to Wolfram|Alpha Pro. The value of each award is
-          $375.00.
-        </li>
+      <ul className="mt-[8%] max-[1100px]:mt-[2%] pl-[10%] text-[1.15rem] max-[1100px]:text-[0.8rem] text-white list-disc flex flex-col gap-2 h-[45%]">
+        {awardList.map((award, index) => (
+          <li key={index}>
+            {award.includes("Rs.") ? (
+              <span className="text-blue-500">{award}</span>
+            ) : (
+              award
+            )}
+          </li>
+        ))}
       </ul>
-      {/* <button className="absolute w-1/2 p-2 max-[100px]:p1 text-sm text-white bg-black rounded-3xl bottom-4">
-        More
-      </button> */}
       <div className="absolute w-[150%] rounded-full aspect-square bg-[#232323] -z-10 translate-y-[-65%]"></div>
     </div>
   );
 };
 
 export default PriceItem;
-

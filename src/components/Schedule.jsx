@@ -8,7 +8,7 @@ import events from "../constants/timelinelist";
 const Schedule = () => {
   return (
     <>
-      <div className="flex flex-col items-center w-full">
+      <div className="flex flex-col items-center w-full" id="schedule">
         <h1 className="my-20 text-5xl font-semibold text-white titles">
           Schedule
         </h1>
