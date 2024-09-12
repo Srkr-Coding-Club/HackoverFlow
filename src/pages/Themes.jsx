@@ -58,7 +58,7 @@ const FlipCard = ({ card, isFlipped, onClick }) => {
       <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
         {/* Front of the card */}
         <div
-          className="flex flex-col items-center w-full h-full overflow-hidden transition-transform transform bg-gray-900 border border-gray-700 rounded-lg shadow-lg cursor-pointer"
+          className="flex flex-col items-center w-full h-full overflow-hidden transition-transform transform bg-gray-900 border-[2px] border-gray-700 rounded-3xl shadow-lg cursor-pointer"
           onClick={onClick}>
           <div className="flex items-center justify-center flex-grow">
             <img
@@ -76,7 +76,7 @@ const FlipCard = ({ card, isFlipped, onClick }) => {
 
         {/* Back of the card */}
         <div
-          className="flex flex-col items-center justify-center w-full h-[15.6rem] overflow-hidden transition-transform transform bg-gray-900 border border-gray-700 rounded-lg shadow-lg cursor-pointer"
+          className="flex flex-col items-center justify-center w-full h-[15.6rem] overflow-hidden transition-transform transform bg-gray-900 border-[2px] border-gray-700 rounded-3xl shadow-lg cursor-pointer"
           onClick={onClick}>
           <p className="p-3 text-center text-white ">{card.description}</p>
         </div>
