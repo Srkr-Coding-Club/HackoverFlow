@@ -5,8 +5,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full min-h-20 z-20 border-gray-200 bg-gray-900 px-4 py-2.5 flex justify-center">
+    <nav className="fixed w-full min-h-20 z-20 border-gray-200 bg-gray-900 px-4 py-2.5">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
+<<<<<<< HEAD
         <a href="/" className="relative flex items-center">
           <img
             src="/logo1.png"
@@ -21,11 +22,33 @@ const Navbar = () => {
             <p className="text-sm">SRKR CODING CLUB</p>
           </div>
         </a>
+=======
+        {/* Logo on the Left */}
+        <div className="flex items-center">
+          <a href="/" className="flex items-center">
+            <img
+              src="/logo1.png"
+              width={70}
+              height={70}
+              className="rounded drop-shadow-4xl"
+              alt="Logo"
+            />
+          </a>
+        </div>
+
+        {/* Text in the center, responsive */}
+        <div className="flex-1 text-center">
+          <p className="font-bold text-lg text-white hidden md:block">S.R.K.R Engineering College</p>
+          <p className="text-sm text-white hidden md:block">SRKR Coding Club</p>
+        </div>
+
+        {/* Hamburger Menu Button */}
+>>>>>>> 908b57b26f7d608b34f92d1e41b7d25a3e242a99
         <button
           onClick={() => setIsOpen(!isOpen)}
           data-collapse-toggle="navbar-default"
           type="button"
-          className="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -43,6 +66,8 @@ const Navbar = () => {
             ></path>
           </svg>
         </button>
+
+        {/* Navigation Links */}
         <div
           className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
           id="navbar-default"
@@ -100,6 +125,12 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+      </div>
+
+      {/* Centered Text for mobile view */}
+      <div className="text-center md:hidden">
+        <p className="font-bold text-xs text-white">S.R.K.R Engineering College</p>
+        <p className="text-sm text-white">SRKR Coding Club</p>
       </div>
     </nav>
   );
