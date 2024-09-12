@@ -51,11 +51,9 @@ const AboutSection = () => {
         </div>
         <div className="flex flex-col items-center p-4 text-center bg-gray-700 rounded-lg w-52">
           {inView && (
-            <CountUp
-              end={1700}
-              duration={3}
-              className="text-4xl text-orange-500"
-            />
+            <div className="text-4xl text-orange-500">
+              <CountUp end={1000} duration={3} />+
+            </div>
           )}
           <span className="text-xl">Participants</span>
         </div>
