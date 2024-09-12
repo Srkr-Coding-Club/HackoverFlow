@@ -12,7 +12,8 @@ const Navbar = () => {
             src="/logo1.png"
             width={70}
             height={70}
-            className="mx-4"
+
+            className="mx-4 rounded drop-shadow-4xl"
             alt="Logo"
             style={{ filter: "drop-shadow(0 0 30px rgba(255, 255, 255, 1))" }}
           />

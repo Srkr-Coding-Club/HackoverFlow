@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
@@ -6,6 +7,29 @@ const AboutSection = () => {
     triggerOnce: true,
     threshold: 0.1,
   });
+
+  // Array of images for the slideshow
+  const images = ["/team.jpg", "/poster.jpg", "/mem1.jpg"];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isFadingOut, setIsFadingOut] = useState(false);
+
+  // Change image every 3 seconds with smoother transition
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      // Start fade-out
+      setIsFadingOut(true);
+
+      // Wait for fade-out to complete before switching the image
+      setTimeout(() => {
+        setCurrentImageIndex((prevIndex) =>
+          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
+        setIsFadingOut(false); // Start fade-in after image change
+      }, 500); // 500ms matches the duration of the CSS transition
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(intervalId); // Clear interval on component unmount
+  }, [images.length]);
 
   return (
     <div ref={ref} className="px-5 py-10 text-white " id="about">
@@ -36,30 +60,37 @@ const AboutSection = () => {
           <span className="text-xl">Participants</span>
         </div>
       </div>
+
       <div className="grid gap-8 mt-10 font-medium md:grid-cols-2">
-        <div className="h-full p-6 overflow-y-auto bg-gray-700 rounded-lg ">
-          <p className="mb-4 text-lg">
-            Getting into a loop of ideas, but finding out where to showcase
-            them? It’s time to think big and act fast! 💡 Start building
-            projects and join us at HackOverFlow 2024! 🛠
-          </p>
-          <p className="mb-4 text-lg">
-            HackOverFlow 2024 is a 24-hour national-level hackathon organized by
-            the SRKR CODING CLUB🌏{" "}
-          </p>
-          <p className="text-lg">
-            This event provides a platform for passionate developers, designers,
-            and enthusiasts to come together and transform their ideas into
-            reality. It’s not just an opportunity to showcase technical skills;
-            it’s a chance to network, learn, and have a memorable time with
-            like-minded individuals. 👏
-          </p>
+        <div className="h-full p-6 bg-gray-700 rounded-lg flex items-center justify-center">
+          <div className="max-w-lg overflow-y-auto text-white">
+            <p className="mb-4 text-lg">
+              Getting into a loop of ideas, but finding out where to showcase
+              them? It’s time to think big and act fast! 💡 Start building
+              projects and join us at HackOverFlow 2024! 🛠
+            </p>
+            <p className="mb-4 text-lg">
+              HackOverFlow 2024 is a 24-hour national-level hackathon organized
+              by the SRKR CODING CLUB🌏{" "}
+            </p>
+            <p className="text-lg">
+              This event provides a platform for passionate developers,
+              designers, and enthusiasts to come together and transform their
+              ideas into reality. It’s not just an opportunity to showcase
+              technical skills; it’s a chance to network, learn, and have a
+              memorable time with like-minded individuals. 👏
+            </p>
+          </div>
         </div>
-        <div className="flex items-center justify-center w-auto h-auto p-3 bg-gray-600 rounded-lg">
+
+        {/* Slideshow Section */}
+        <div className="flex items-center justify-center w-full h-auto p-3 bg-gray-600 rounded-lg">
           <img
-            src="/team.jpg"
-            alt="DUHacks Participants"
-            className="w-auto h-auto rounded-lg "
+            src={images[currentImageIndex]}
+            alt="Hackathon Slideshow"
+            className={`w-full h-auto object-cover rounded-lg transition-opacity duration-500 ${
+              isFadingOut ? "opacity-0" : "opacity-100"
+            }`}
           />
         </div>
       </div>

@@ -6,36 +6,15 @@ const Popup = () => {
   const [isImageLoading, setIsImageLoading] = useState(true); // Loading state for image
 
   useEffect(() => {
-    const storedValue = localStorage.getItem("popupCheckbox");
-    const storedTimestamp = localStorage.getItem("popupTimestamp");
-
-    if (storedValue && storedTimestamp) {
-      const currentTime = new Date().getTime();
-      const storedTime = parseInt(storedTimestamp, 10);
-
-      if (currentTime - storedTime < 300 * 1000) {
-        setIsChecked(true);
-        return;
-      } else {
-        localStorage.removeItem("popupCheckbox");
-        localStorage.removeItem("popupTimestamp");
-      }
-    }
-
+    // Set popup visible every time the page loads
     setIsVisible(true);
   }, []);
 
   const handleCheckboxChange = (event) => {
     setIsChecked(event.target.checked);
-  };
-
-  const handleSubmit = () => {
-    if (isChecked) {
-      const timestamp = new Date().getTime();
-      localStorage.setItem("popupCheckbox", true);
-      localStorage.setItem("popupTimestamp", timestamp);
+    if (event.target.checked) {
+      setIsVisible(false); // Close the popup when checkbox is checked
     }
-    setIsVisible(false);
   };
 
   const handleImageLoad = () => {
@@ -53,12 +32,11 @@ const Popup = () => {
       <div className="bg-white rounded-lg p-3 mx-auto shadow-lg max-w-2xl w-full">
         {/* Popup content */}
         <div className="mb-6 relative">
-          {/* Image loading spinner */}
-          {isImageLoading && (
+          {/* {isImageLoading && (
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="loader border-t-transparent border-solid animate-spin rounded-full border-blue-600 border-4 h-8 w-8"></div>
             </div>
-          )}
+          )} */}
           <img
             src="/poster.jpg"
             alt="Poster"
@@ -80,17 +58,6 @@ const Popup = () => {
             <span className="ml-2">I agree to the Steps.</span>
           </label>
         </div>
-        <button
-          onClick={handleSubmit}
-          disabled={!isChecked}
-          className={`${
-            isChecked
-              ? "bg-indigo-600 hover:bg-indigo-700"
-              : "bg-gray-400 cursor-not-allowed"
-          } text-white font-semibold py-2 px-6 rounded-lg transition duration-200 ease-in-out`}
-        >
-          Submit
-        </button>
       </div>
     </div>
   );

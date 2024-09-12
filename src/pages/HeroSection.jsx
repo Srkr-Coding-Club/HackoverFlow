@@ -1,29 +1,31 @@
+import React, { useState } from 'react';
 import Countdown from 'react-countdown';
 
 const Banner = () => {
   const countdownDate = new Date('2024-10-25T00:00:00').getTime();
 
+  const [isModalOpen, setIsModalOpen] = useState(false); // State to handle modal visibility
+
   const renderer = ({ days, hours, minutes, seconds }) => {
     return (
       <div className="flex space-x-4 text-center">
-      <div className="flex flex-col items-center bg-black bg-opacity-30 p-2 md:p-4 rounded-xl">
-        <span className="text-4xl md:text-6xl text-cyan-500 font-bold">{days}</span>
-        <span className="text-lg md:text-xl font-bold">Days</span>
+        <div className="flex flex-col items-center bg-black bg-opacity-30 p-2 md:p-4 rounded-xl">
+          <span className="text-4xl md:text-6xl text-cyan-500 font-bold">{days}</span>
+          <span className="text-lg md:text-xl font-bold">Days</span>
+        </div>
+        <div className="flex flex-col items-center bg-black bg-opacity-30 p-2 md:p-4 rounded-xl">
+          <span className="text-4xl md:text-6xl text-pink-500 font-bold">{hours}</span>
+          <span className="text-lg md:text-xl font-bold">Hours</span>
+        </div>
+        <div className="flex flex-col items-center bg-black bg-opacity-30 p-2 md:p-4 rounded-xl">
+          <span className="text-4xl md:text-6xl text-purple-500 font-bold">{minutes}</span>
+          <span className="text-lg md:text-xl font-bold">Minutes</span>
+        </div>
+        <div className="flex flex-col items-center bg-black bg-opacity-30 p-2 md:p-4 rounded-xl">
+          <span className="text-4xl md:text-6xl text-orange-500 font-bold">{seconds}</span>
+          <span className="text-lg md:text-xl font-bold">Seconds</span>
+        </div>
       </div>
-      <div className="flex flex-col items-center bg-black bg-opacity-30 p-2 md:p-4 rounded-xl">
-        <span className="text-4xl md:text-6xl text-pink-500 font-bold">{hours}</span>
-        <span className="text-lg md:text-xl font-bold">Hours</span>
-      </div>
-      <div className="flex flex-col items-center bg-black bg-opacity-30 p-2 md:p-4 rounded-xl">
-        <span className="text-4xl md:text-6xl text-purple-500 font-bold">{minutes}</span>
-        <span className="text-lg md:text-xl font-bold">Minutes</span>
-      </div>
-      <div className="flex flex-col items-center bg-black bg-opacity-30 p-2 md:p-4 rounded-xl">
-        <span className="text-4xl md:text-6xl text-orange-500 font-bold">{seconds}</span>
-        <span className="text-lg md:text-xl font-bold">Seconds</span>
-      </div>
-    </div>
-    
     );
   };
 
@@ -37,15 +39,13 @@ const Banner = () => {
 
         {/* Buttons container */}
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-8">
-         
           {/* Go to Themes Button */}
-          <a
-            href="/HACKOVERFLOW-2K24-PROBLEM-STATEMENTS.pdf"
-            download={"HACKOVERFLOW-2024-Problem-Statements.pdf"}
+          <button
+            onClick={() => setIsModalOpen(true)} // Open modal on click
             className="px-10 py-3 bg-white text-gray-900 font-bold rounded-full shadow-lg hover:bg-gray-900 hover:text-white hover:border-white hover:border-2 transition-colors duration-300"
           >
             Go to Themes
-          </a>
+          </button>
 
           {/* Register Now Button */}
           <a
@@ -54,14 +54,44 @@ const Banner = () => {
           >
             Register Now
           </a>
-
-         
         </div>
       </div>
 
       <div className="mt-8 md:mt-0 md:ml-8 md:w-full w-1/2 hidden md:flex justify-center">
         <img src="/boy.png" alt="Character" className="h-[30rem] w-auto drop-shadow-3xl" />
       </div>
+
+      {/* Modal for showing themes and PDF */}
+      {isModalOpen && (
+        <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+          <div className="bg-white p-6 rounded-lg w-11/12 max-w-4xl">
+            {/* Close Button */}
+            <div className="flex justify-end">
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="text-gray-500 hover:text-gray-900 font-bold"
+              >
+                &times;
+              </button>
+            </div>
+
+            {/* Modal Content */}
+            <h2 className="text-2xl font-bold mb-4 text-gray-900">Instructions</h2>
+            <p className="mb-4 text-gray-700">
+              Please review the themes and problem statements for HackOverFlow 2024. Below is the official document:
+            </p>
+
+            {/* PDF iframe */}
+            <div className="border-2 border-gray-200 rounded-lg overflow-hidden">
+              <iframe
+                src="/HACKOVERFLOW-2K24-PROBLEM-STATEMENTS.pdf"
+                className="w-full h-96"
+                title="HackOverFlow Problem Statements"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
