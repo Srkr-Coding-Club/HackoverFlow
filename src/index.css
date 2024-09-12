@@ -24,7 +24,7 @@ body {
 }
 
 .glassy-div {
-  background: rgba(39, 39, 42, 0.43);
+  background: rgba(55, 65, 81, 0.6);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 2px solid rgba(39, 39, 42, 0.5);
   backdrop-filter: blur(9.1px);
