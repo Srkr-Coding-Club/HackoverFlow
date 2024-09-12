@@ -6,22 +6,31 @@ const cardData = [
     id: 1,
     title: "Health Care",
     imgSrc: "/bgdoctor.png",
-    description:
-      "The theme of Health Care aims to innovate and improve access to medical services, patient care, and overall health management. Participants are encouraged to develop solutions that address challenges such as disease prevention, remote healthcare, and efficient medical resource allocation.",
+    description: [
+      "Technology heals faster, innovation saves lives.",
+      "Revolutionizing healthcare one breakthrough at a time.",
+      "Curing the world, one tech solution at a time.",
+    ],
   },
   {
     id: 2,
     title: "Women And Child Safety",
     imgSrc: "/bgwomen.png",
-    description:
-      "Women and Child Safety focuses on developing solutions that enhance the protection and well-being of women and children. Participants are encouraged to create technologies or systems that address issues like harassment prevention, emergency response, and safe environments for vulnerable groups.",
+    description: [
+      "Technology heals faster, innovation saves lives.",
+      "Revolutionizing healthcare one breakthrough at a time.",
+      "Curing the world, one tech solution at a time.",
+    ],
   },
   {
     id: 3,
     title: "Agriculture",
     imgSrc: "/bgfarmer.png",
-    description:
-      "The theme of Agriculture emphasizes creating innovative solutions to improve farming techniques, resource management, and sustainability. Participants are encouraged to address challenges like crop optimization, soil health, and efficient use of water and other resources to boost agricultural productivity.",
+    description: [
+      "Sow the seeds of innovation, and grow the future of sustainable farming.",
+      "Empowering agriculture with technology for a greener tomorrow.",
+      "Innovate today, harvest tomorrow.",
+    ],
   },
 ];
 
@@ -78,7 +87,13 @@ const FlipCard = ({ card, isFlipped, onClick }) => {
         <div
           className="flex flex-col items-center justify-center w-full h-[15.6rem] overflow-hidden transition-transform transform bg-gray-900 border-[2px] border-gray-700 rounded-3xl shadow-lg cursor-pointer"
           onClick={onClick}>
-          <p className="p-3 text-center text-white ">{card.description}</p>
+          <ul className="flex flex-col gap-1 p-3 text-white ">
+            {card.description.map((point, index) => (
+              <l1 className="text-center" key={index}>
+                {point}
+              </l1>
+            ))}
+          </ul>
         </div>
       </ReactCardFlip>
     </div>

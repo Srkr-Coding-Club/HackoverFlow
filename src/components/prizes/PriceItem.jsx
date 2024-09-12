@@ -23,34 +23,37 @@ const PriceItem = (props) => {
   // Award descriptions for each rank
   const awards = {
     1: [
-      "Cash prize of Rs.15000",
-      "Awarded to the team with the most innovative, impactful, or technically impressive project. The cash prize is intended to recognize outstanding contributions and encourage continued innovation in the field"
+      "Check of ₹15,000",
+      "First Prize – Memento",
+      "Awarded to the team with the most innovative and impactful project.",
     ],
     2: [
-      "Cash prize of Rs.9000",
-      "Awarded to the team with the second-best project, showcasing strong creativity, technical skill, and impact. This prize acknowledges significant achievement and excellence in the competition.",
+      "Check of ₹9,000",
+      "Second Prize – Memento",
+      ,
+      "Given to the second-best team for creativity, technical excellence, and impactful solutions.",
     ],
     3: [
-      "Cash prize of Rs.6000",
-      "Awarded to the team with the third-best project, demonstrating commendable innovation, technical proficiency, and impact. This prize highlights notable achievement and contributes to encouraging future endeavors.",
+      "Check of ₹6,000",
+      "Third Prize – Memento",
+      "Awarded to the third-best team for commendable innovation and technical skill.",
     ],
-    0: [
-      "Participation certificate",
-      "Access to exclusive webinars and talks",
-    ],
+    0: ["Participation certificate", "Access to exclusive webinars and talks"],
   };
 
   const awardList = awards[props.rank] || awards[0];
 
   return (
     <div
-      className={`glassy-div w-[21rem] h-[29rem] max-[1100px]:w-[13.8rem] max-[1100px]:h-[20rem] flex flex-col items-center gap-4 max-[1100px]:p-1 p-1 rounded-3xl relative overflow-hidden m-4`}>
+      className={`glassy-div w-[21rem] h-[29rem] max-[1100px]:w-[13.8rem] max-[1100px]:h-[20rem] flex flex-col items-center gap-4 max-[1100px]:p-1 p-1 rounded-3xl relative overflow-hidden m-4 ${
+        props.rank == 2 ? "min-[800px]:order-[-1]" : ""
+      }`}>
       <img className="w-[50%] mx-auto" src={icon}></img>
-      <ul className="mt-[8%] max-[1100px]:mt-[2%] pl-[10%] text-[1.15rem] max-[1100px]:text-[0.8rem] text-white list-disc flex flex-col gap-2 h-[45%]">
+      <ul className="mt-[8%] max-[1100px]:mt-[2%] pl-[10%] text-[1.15rem] max-[1100px]:text-[0.8rem] text-white list-disc flex justify-center flex-col gap-2 h-[45%]">
         {awardList.map((award, index) => (
           <li key={index}>
-            {award.includes("Rs.") ? (
-              <span className="text-blue-500">{award}</span>
+            {index == 0 ? (
+              <span className="font-semibold text-orange-300 ">{award}</span>
             ) : (
               award
             )}
