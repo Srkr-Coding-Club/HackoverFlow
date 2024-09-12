@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Countdown from 'react-countdown';
+import { Link as ScrollLink } from 'react-scroll';  // Import react-scroll Link
 
 const Banner = () => {
   const countdownDate = new Date('2024-10-25T00:00:00').getTime();
@@ -32,7 +33,7 @@ const Banner = () => {
   return (
     <div className="flex flex-col h-screen md:flex-row items-center bg-gradient-to-r from-gray-800 to-gray-900 text-white py-10 px-5">
       <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left md:ml-10">
-        <h1 className="text-6xl font-semibold mt-20 mb-4 titles">HACK OVERFLOW</h1>
+        <h1 className="text-5xl font-semibold mt-20 mb-4 titles">HACK OVERFLOW~2k24</h1>
         <p className="text-2xl mb-2 font-bold">25 - 26TH OCT</p>
         <p className="text-xl mb-8">HACK FOR A CHANGE !</p>
         <Countdown date={countdownDate} renderer={renderer} />
@@ -40,12 +41,14 @@ const Banner = () => {
         {/* Buttons container */}
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-8">
           {/* Go to Themes Button */}
-          <button
-            onClick={() => setIsModalOpen(true)} // Open modal on click
-            className="px-10 py-3 bg-white text-gray-900 font-bold rounded-full shadow-lg hover:bg-gray-900 hover:text-white hover:border-white hover:border-2 transition-colors duration-300"
+          <ScrollLink
+            to="themes"  // Link to the "themes" section
+            smooth={true}
+            duration={500}
+            className="px-10 py-3 bg-white text-gray-900 font-bold rounded-full shadow-lg hover:bg-gray-900 hover:text-white hover:border-white hover:border-2 transition-colors duration-300 cursor-pointer"
           >
             Go to Themes
-          </button>
+          </ScrollLink>
 
           {/* Register Now Button */}
           <a

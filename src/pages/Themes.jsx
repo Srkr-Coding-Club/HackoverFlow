@@ -34,7 +34,7 @@ const Themes = () => {
   };
 
   return (
-    <div className="py-8 min-h-auto">
+    <div className="py-8 min-h-auto" id="themes">
       <h1 className="mb-8 text-4xl text-center text-white titles">THEMES</h1>
       <div className="container px-4 mx-auto">
         <div className="flex flex-wrap justify-center gap-6">
