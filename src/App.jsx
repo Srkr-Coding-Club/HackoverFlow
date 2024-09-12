@@ -9,6 +9,8 @@ import Sponcers from "./components/Sponsors";
 import Prizes from "./components/Prizes";
 import Popup from "./pages/Popup";
 import Query from "./components/Query";
+import Slideshow from "./pages/Slideshow";
+
 
 const App = () => {
   return (
@@ -20,6 +22,7 @@ const App = () => {
       <Themes />
       <Schedule />
       <Prizes />
+      <Slideshow />
       {/* <Sponcers /> */}
       <Query />
       <Footer />

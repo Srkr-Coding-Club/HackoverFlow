@@ -45,7 +45,7 @@ const Banner = () => {
             to="themes"  // Link to the "themes" section
             smooth={true}
             duration={500}
-            className="px-10 py-3 bg-cyan-500 text-gray-900 font-bold rounded-full shadow-lg hover:bg-gray-900 hover:text-white hover:border-white hover:border-2 transition-colors duration-300 cursor-pointer"
+            className="px-10 py-3 bg-white text-gray-900 font-bold rounded-full shadow-lg hover:bg-gray-900 hover:text-white hover:border-white hover:border-2 transition-colors duration-300 cursor-pointer"
           >
             Go to Themes
           </ScrollLink>
