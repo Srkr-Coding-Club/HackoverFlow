@@ -7,34 +7,14 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full min-h-20 z-20 border-gray-200 bg-gray-900 px-4 py-2.5">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
-<<<<<<< HEAD
         {/* Logo and Text (S.R.K.R Engineering College and SRKR Coding Club) */}
-=======
-<<<<<<< HEAD
-        <a href="/" className="relative flex items-center">
-          <img
-            src="/logo1.png"
-            width={70}
-            height={70}
-            className="mx-4 rounded drop-shadow-4xl"
-            alt="Logo"
-            style={{ filter: "drop-shadow(0 0 30px rgba(255, 255, 255, 1))" }}
-          />
-          <div className="ml-2 text-white">
-            <p className="text-lg font-semibold">SRKREC (A)</p>
-            <p className="text-sm">SRKR CODING CLUB</p>
-          </div>
-        </a>
-=======
-        {/* Logo on the Left */}
->>>>>>> 2040ed70fc89f882eff559e0551ffc1117f1edcc
         <div className="flex items-center">
           <a href="/" className="flex items-center">
             <img
               src="/logo1.png"
               width={70}
               height={70}
-              className="rounded bg-white"
+              className="rounded drop-shadow-4xl"
               alt="Logo"
             />
           </a>
@@ -46,7 +26,6 @@ const Navbar = () => {
         </div>
 
         {/* Hamburger Menu Button */}
->>>>>>> 908b57b26f7d608b34f92d1e41b7d25a3e242a99
         <button
           onClick={() => setIsOpen(!isOpen)}
           data-collapse-toggle="navbar-default"
@@ -142,7 +121,7 @@ const Navbar = () => {
 
       {/* Centered Text for mobile view */}
       <div className="text-center md:hidden mt-2">
-        <p className="font-bold text-xs text-white">SRKREC(A)</p>
+        <p className="font-bold text-xs text-white">S.R.K.R Engineering College</p>
         <p className="text-sm text-white">SRKR Coding Club</p>
       </div>
     </nav>
@@ -150,4 +129,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
