@@ -9,7 +9,7 @@ const AboutSection = () => {
   });
 
   // Array of images for the slideshow
-  const images = ["/team.jpg", "/poster.jpg", "/mem1.jpg"];
+  const images = ["/team.jpg", "/poster.jpg"];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isFadingOut, setIsFadingOut] = useState(false);
 
@@ -62,7 +62,7 @@ const AboutSection = () => {
       </div>
 
       <div className="grid gap-8 mt-10 font-medium md:grid-cols-2">
-        <div className="h-full p-6 bg-gray-700 rounded-lg flex items-center justify-center">
+        <div className="flex items-center justify-center h-full p-6 bg-gray-700 rounded-lg">
           <div className="max-w-lg overflow-y-auto text-white">
             <p className="mb-4 text-lg">
               Getting into a loop of ideas, but finding out where to showcase
