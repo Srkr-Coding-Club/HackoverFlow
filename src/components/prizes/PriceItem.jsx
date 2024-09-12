@@ -45,9 +45,7 @@ const PriceItem = (props) => {
 
   return (
     <div
-      className={`glassy-div w-[21rem] h-[29rem] max-[1100px]:w-[13.8rem] max-[1100px]:h-[20rem] flex flex-col items-center gap-4 max-[1100px]:p-1 p-1 rounded-3xl relative overflow-hidden m-4 ${
-        props.rank == 2 ? "min-[800px]:order-[-1]" : ""
-      }`}>
+      className={`glassy-div w-[21rem] h-[29rem] max-[1100px]:w-[13.8rem] max-[1100px]:h-[20rem] flex flex-col items-center gap-4 max-[1100px]:p-1 p-1 rounded-3xl relative overflow-hidden m-4 `}>
       <img className="w-[50%] mx-auto" src={icon}></img>
       <ul className="mt-[8%] max-[1100px]:mt-[2%] pl-[10%] text-[1.15rem] max-[1100px]:text-[0.8rem] text-white list-disc flex justify-center flex-col gap-2 h-[45%]">
         {awardList.map((award, index) => (
