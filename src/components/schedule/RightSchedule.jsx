@@ -68,14 +68,14 @@ const RightSchedule = (props) => {
         description={props.description}
       />
       <div
-        className={`absolute left-0 h-full border-r-0 rounded-l-[50px] w-1/2 border-blue-600 border-[0.7rem] border-solid transition-all ease-in-out duration-1000 ${posStyles} ${
-          isAbove || isCentered ? "border-blue-600" : "border-white"
+        className={`absolute left-0 h-full border-r-0 rounded-l-[50px] w-1/2 border-[0.7rem] border-solid transition-all ease-in-out duration-1000 ${posStyles} ${
+          isAbove || isCentered ? "border-orange-300" : "border-white"
         }`}></div>
       <div
         className={`${
           isCentered
-            ? "h-12 border-[15px] border-white left-[-1.1rem] bg-blue-600"
-            : "h-8 bg-white left-[-0.6rem] border-blue-600 border-[10px]"
+            ? "h-12 border-[15px] border-white left-[-1.1rem] bg-orange-300"
+            : "h-8 bg-white left-[-0.6rem] border-orange-300 border-[10px]"
         } aspect-square border-solid absolute rounded-full top-16 transition-all ease-out `}
         ref={elementRef}></div>
     </div>
