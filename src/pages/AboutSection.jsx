@@ -63,20 +63,22 @@ const AboutSection = () => {
         <div className="flex items-center justify-center h-full p-6 bg-gray-700 rounded-lg">
           <div className="max-w-lg overflow-y-auto text-white">
             <p className="mb-4 text-lg">
-              Getting into a loop of ideas, but finding out where to showcase
-              them? It’s time to think big and act fast! 💡 Start building
-              projects and join us at HackOverFlow 2024! 🛠
+              HackOverFlow is a 24-hour national hackathon hosted by the{" "}
+              <strong>SRKR Coding Club</strong> from the renowned{" "}
+              <strong>
+                Sagi Rama Krishnam Raju Engineering College (Autonomous),
+                Bhimavaram, Andhra Pradesh.
+              </strong>{" "}
+              This event brings together students from across the country to
+              tackle real-world challenges through technology. Participants will
+              have the chance to create innovative solutions in areas like
+              healthcare, agriculture, and women & child safety.
             </p>
             <p className="mb-4 text-lg">
-              HackOverFlow 2024 is a 24-hour national-level hackathon organized
-              by the SRKR CODING CLUB🌏{" "}
-            </p>
-            <p className="text-lg">
-              This event provides a platform for passionate developers,
-              designers, and enthusiasts to come together and transform their
-              ideas into reality. It’s not just an opportunity to showcase
-              technical skills; it’s a chance to network, learn, and have a
-              memorable time with like-minded individuals. 👏
+              HackOverFlow is all about fostering creativity, collaboration, and
+              problem-solving. Whether you're a seasoned coder or just starting
+              out, this hackathon offers a great opportunity to learn, work with
+              others, and build tech solutions that make a real impact.
             </p>
           </div>
         </div>
