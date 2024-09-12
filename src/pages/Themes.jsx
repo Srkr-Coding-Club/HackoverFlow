@@ -89,9 +89,9 @@ const FlipCard = ({ card, isFlipped, onClick }) => {
           onClick={onClick}>
           <ul className="flex flex-col gap-1 p-3 text-white ">
             {card.description.map((point, index) => (
-              <l1 className="text-center" key={index}>
+              <li className="text-center" key={index}>
                 {point}
-              </l1>
+              </li>
             ))}
           </ul>
         </div>

@@ -53,10 +53,6 @@ const RightSchedule = (props) => {
     };
   }, []);
 
-  useEffect(() => {
-    console.log("Anim state changed:", isCentered);
-    console.log("Is above center:", isAbove);
-  }, [isCentered, isAbove]);
 
   return (
     <div

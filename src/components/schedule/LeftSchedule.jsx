@@ -54,10 +54,6 @@ const LeftSchedule = (props) => {
     };
   }, []);
 
-  useEffect(() => {
-    console.log("Anim state changed:", isCentered);
-    console.log("Is above center:", isAbove);
-  }, [isCentered, isAbove]);
 
   return (
     <div className="relative flex w-full" style={{ top: `-${top}rem` }}>
