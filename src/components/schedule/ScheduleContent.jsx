@@ -38,7 +38,9 @@ const ScheduleContent = (props) => {
       className={`w-[90%] px-4 py-8 max-sm:py-6 in-visible m-12 ${
         props.isLeft ? "ml-0" : "mr-0"
       } glassy-div rounded-3xl `}>
-      <h2 className="text-[#f0abfc] text-xl max-sm:text-lg ">{props.time}</h2>
+      <h2 className="text-2xl font-semibold text-orange-300 max-sm:text-lg ">
+        {props.time}
+      </h2>
       <h3 className="my-2 text-xl font-semibold text-white max-sm:text-lg max-sm:my-1">
         {props.title}
       </h3>

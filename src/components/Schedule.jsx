@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import RightSchedule from "./schedule/RightSchedule";
 import LeftSchedule from "./schedule/LeftSchedule";
@@ -6,6 +6,9 @@ import LeftSchedule from "./schedule/LeftSchedule";
 import events from "../constants/timelinelist";
 
 const Schedule = () => {
+
+  const [timelineColor, setTimeLineColor] = useState();
+
   return (
     <>
       <div className="flex flex-col items-center w-full" id="schedule">
