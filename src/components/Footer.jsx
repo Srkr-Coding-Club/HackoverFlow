@@ -50,31 +50,28 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between w-full max-w-4xl mt-6 text-center">
           {/* Left Side Contacts */}
           <div className="flex-1">
-            <h3 className="text-lg font-semibold sm:text-base">Contact Us</h3>
-            <p className="mt-2 text-sm sm:text-xs">
-              <span className="font-bold">John Doe</span> <br />
-              Phone: +91 98765 43210 <br />
-              Email: johndoe@srkrcodingclub.com
+            <h3 className="text-lg font-semibold sm:text-xl underline">Contact Us</h3>
+            <p className="mt-2 text-sm sm:text-xl">
+              <span className="font-bold">Siva Gopal Varma</span> <br />
+              Phone: +91 9951881139 <br />
             </p>
-            <p className="mt-2 text-sm sm:text-xs">
-              <span className="font-bold">Jane Smith</span> <br />
-              Phone: +91 91234 56789 <br />
-              Email: janesmith@srkrcodingclub.com
+            <p className="mt-2 text-sm sm:text-xl">
+              <span className="font-bold">John Sudhakar</span> <br />
+              Phone: +91 9849274007 <br />
             </p>
           </div>
 
           {/* Right Side Contacts */}
           <div className="flex-1 mt-6 md:mt-0">
-            <h3 className="text-lg font-semibold sm:text-base">Get in Touch</h3>
-            <p className="mt-2 text-sm sm:text-xs">
-              <span className="font-bold">Alex Johnson</span> <br />
-              Phone: +91 99876 54321 <br />
-              Email: alexjohnson@srkrcodingclub.com
+            <h3 className="text-lg font-semibold sm:text-xl underline">Get in Touch</h3>
+            <p className="mt-2 text-sm sm:text-xl">
+              <span className="font-bold">Shaik Rafique</span> <br />
+              Phone: +91 9381327622 <br />
             </p>
-            <p className="mt-2 text-sm sm:text-xs">
-              <span className="font-bold">Emily Davis</span> <br />
-              Phone: +91 98765 12345 <br />
-              Email: emilydavis@srkrcodingclub.com
+            <p className="mt-2 text-sm sm:text-xl">
+              <span className="font-bold">Jagadeesh</span> <br />
+              Phone: +91 8919317202<br />
+            
             </p>
           </div>
         </div>
