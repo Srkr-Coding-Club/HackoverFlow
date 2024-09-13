@@ -53,11 +53,11 @@ const Footer = () => {
             <h3 className="text-lg font-semibold sm:text-xl underline">Contact Us</h3>
             <p className="mt-2 text-sm sm:text-xl">
               <span className="font-bold">Siva Gopal Varma</span> <br />
-              Phone: +91 9951881139 <br />
+              Phone: <a href="tel:+919951881139">+91 9951881139</a> <br />
             </p>
             <p className="mt-2 text-sm sm:text-xl">
               <span className="font-bold">John Sudhakar</span> <br />
-              Phone: +91 9849274007 <br />
+              Phone: <a href="tel:+919849274007"> +91 9849274007</a> <br />
             </p>
           </div>
 
@@ -66,11 +66,11 @@ const Footer = () => {
             <h3 className="text-lg font-semibold sm:text-xl underline">Get in Touch</h3>
             <p className="mt-2 text-sm sm:text-xl">
               <span className="font-bold">Shaik Rafique</span> <br />
-              Phone: +91 9381327622 <br />
+              Phone: <a href="tel:+919381327622">+91 9381327622</a>  <br />
             </p>
             <p className="mt-2 text-sm sm:text-xl">
               <span className="font-bold">Jagadeesh</span> <br />
-              Phone: +91 8919317202<br />
+              Phone: <a href="tel:+918919317202">+91 8919317202</a><br />
             
             </p>
           </div>
