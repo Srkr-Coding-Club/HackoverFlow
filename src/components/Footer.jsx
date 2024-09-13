@@ -79,7 +79,7 @@ const Footer = () => {
         {/* Footer Logo (Placed below contact details in mobile view) */}
         <div className="mt-6 md:order-none order-1">
           <img
-            src="/footerpic.png"
+            src="/logo1.png"
             className="w-32 mx-auto sm:w-52"
             alt="SRKR logo"
           />

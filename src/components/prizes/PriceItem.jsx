@@ -23,18 +23,18 @@ const PriceItem = (props) => {
   // Award descriptions for each rank
   const awards = {
     1: [
-      "Check of ₹15,000",
+      "Cheque of ₹15,000",
       "First Prize – Memento",
       "Awarded to the team with the most innovative and impactful project.",
     ],
     2: [
-      "Check of ₹9,000",
+      "Cheque of ₹9,000",
       "Second Prize – Memento",
       ,
       "Given to the second-best team for creativity, technical excellence, and impactful solutions.",
     ],
     3: [
-      "Check of ₹6,000",
+      "Cheque of ₹6,000",
       "Third Prize – Memento",
       "Awarded to the third-best team for commendable innovation and technical skill.",
     ],
