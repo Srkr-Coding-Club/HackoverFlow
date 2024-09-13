@@ -12,14 +12,14 @@ const Navbar = () => {
           <a href="/" className="flex items-center">
             <img
               src="/logo1.png"
-              width={70}
-              height={70}
-              className="rounded drop-shadow-4xl"
+              width={60}
+              height={60}
+              className="rounded bg-slate-50 opacity-90 shadow-white shadow-inner"
               alt="Logo"
             />
           </a>
           {/* Text next to the logo */}
-          <div className="ml-4 text-white">
+          <div className="ml-4 text-white hidden sm:block">
             <p className="font-bold text-lg">S.R.K.R Engineering College</p>
             <p className="text-sm">SRKR Coding Club</p>
           </div>
@@ -28,13 +28,10 @@ const Navbar = () => {
         {/* Hamburger Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          data-collapse-toggle="navbar-default"
           type="button"
           className="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded="false"
+          aria-expanded={isOpen ? "true" : "false"}
         >
-          <span className="sr-only">Open main menu</span>
           <svg
             className="w-6 h-6"
             fill="currentColor"
@@ -45,7 +42,7 @@ const Navbar = () => {
               fillRule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM4 15a1 1 0 100-2h12a1 1 0 100 2H4z"
               clipRule="evenodd"
-            ></path>
+            />
           </svg>
         </button>
 
@@ -60,7 +57,7 @@ const Navbar = () => {
                 to="about"
                 smooth={true}
                 duration={500}
-                className="block py-2 pl-3 pr-4 text-white transition-colors duration-300 border-b-2 border-transparent cursor-pointer hover:border-blue-700 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-white transition-colors duration-300 border-b-2 border-transparent cursor-pointer hover:text-gray-300 hover:border-blue-400 md:hover:bg-transparent md:border-0 md:p-0"
               >
                 ABOUT
               </ScrollLink>
@@ -70,7 +67,7 @@ const Navbar = () => {
                 to="themes"
                 smooth={true}
                 duration={500}
-                className="block py-2 pl-3 pr-4 text-white transition-colors duration-300 border-b-2 border-transparent cursor-pointer hover:border-blue-700 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-white transition-colors duration-300 border-b-2 border-transparent cursor-pointer hover:text-gray-300 hover:border-blue-400 md:hover:bg-transparent md:border-0 md:p-0"
               >
                 THEMES
               </ScrollLink>
@@ -80,7 +77,7 @@ const Navbar = () => {
                 to="schedule"
                 smooth={true}
                 duration={500}
-                className="block py-2 pl-3 pr-4 text-white transition-colors duration-300 border-b-2 border-transparent cursor-pointer hover:border-blue-700 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-white transition-colors duration-300 border-b-2 border-transparent cursor-pointer hover:text-gray-300 hover:border-blue-400 md:hover:bg-transparent md:border-0 md:p-0"
               >
                 SCHEDULE
               </ScrollLink>
@@ -90,19 +87,19 @@ const Navbar = () => {
                 to="prizes"
                 smooth={true}
                 duration={500}
-                className="block py-2 pl-3 pr-4 text-white transition-colors duration-300 border-b-2 border-transparent cursor-pointer hover:border-blue-700 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-white transition-colors duration-300 border-b-2 border-transparent cursor-pointer hover:text-gray-300 hover:border-blue-400 md:hover:bg-transparent md:border-0 md:p-0"
               >
                 PRIZES
               </ScrollLink>
             </li>
             <li>
               <ScrollLink
-                to="sponsors"
+                to="gallery"
                 smooth={true}
                 duration={500}
-                className="block py-2 pl-3 pr-4 text-white transition-colors duration-300 border-b-2 border-transparent cursor-pointer hover:border-blue-700 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-white transition-colors duration-300 border-b-2 border-transparent cursor-pointer hover:text-gray-300 hover:border-blue-400 md:hover:bg-transparent md:border-0 md:p-0"
               >
-                SPONSORS
+                GALLERY
               </ScrollLink>
             </li>
             <li>
@@ -110,7 +107,7 @@ const Navbar = () => {
                 to="faq"
                 smooth={true}
                 duration={500}
-                className="block py-2 pl-3 pr-4 text-white transition-colors duration-300 border-b-2 border-transparent cursor-pointer hover:border-blue-700 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-white transition-colors duration-300 border-b-2 border-transparent cursor-pointer hover:text-gray-300 hover:border-blue-400 md:hover:bg-transparent md:border-0 md:p-0"
               >
                 FAQ
               </ScrollLink>
@@ -119,10 +116,10 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Centered Text for mobile view */}
-      <div className="text-center md:hidden mt-2">
-        <p className="font-bold text-xs text-white">S.R.K.R Engineering College</p>
-        <p className="text-sm text-white">SRKR Coding Club</p>
+      {/* Centered Text for mobile view (below the logo) */}
+      <div className="text-center sm:hidden -mt-8">
+        <p className="font-bold   text-[0.6rem] text-white">S.R.K.R Engineering College</p>
+        <p className="text-xs text-white">SRKR Coding Club</p>
       </div>
     </nav>
   );

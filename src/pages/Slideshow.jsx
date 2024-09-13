@@ -10,7 +10,7 @@ const Slideshow = () => {
   ];
 
   return (
-    <div className="carousel-container m-auto h-auto py-12 md:py-24 text-center">
+    <div className="carousel-container m-auto h-auto py-12 md:py-24 text-center" id='gallery'>
       {/* Heading */}
       <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-white">SRKR CODING CLUB EVENTS</h2>
 
