@@ -10,7 +10,7 @@ const Prizes = () => {
         <h1 className="text-5xl font-semibold text-center text-white titles">
           Prizes
         </h1>
-        <h2 className="text-3xl font-bold text-orange-300 ">
+        <h2 className="sm:text-3xl text-lg font-bold text-orange-300 ">
           A Grand Prize Pool of ₹30,000
         </h2>
         <div className="grid justify-center max-[800px]:grid-cols-1 grid-cols-3 w-fit ">
