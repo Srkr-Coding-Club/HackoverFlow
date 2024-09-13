@@ -4,9 +4,9 @@ import { Carousel } from 'antd';
 const Slideshow = () => {
   const images = [
     '/hackoverflow4.jpg', 
-    '/hackoverflow5.jpg',
-    '/hackoverflow6.jpg',
     '/hackoverflow7.jpg',
+    '/hackoverflow6.jpg',
+    '/hackoverflow5.jpg',
   ];
 
   return (
@@ -15,7 +15,7 @@ const Slideshow = () => {
       <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-white">SRKR CODING CLUB EVENTS</h2>
 
       {/* Carousel with autoplay, fade effect, and autoplay speed */}
-      <Carousel autoplay autoplaySpeed={2500} effect="fade">
+      <Carousel autoplay arrows autoplaySpeed={2500} effect="scroll">
         {images.map((image, index) => (
           <div key={index}>
             <img
