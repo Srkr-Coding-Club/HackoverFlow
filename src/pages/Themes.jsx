@@ -89,8 +89,8 @@ const Themes = () => {
             </div>
             <div className="p-4">
             <ul className="mt-4 text-sm text-gray-700 list-disc list-inside">
-                <li>You can also bring your own problem statement to the hackathon.</li>
-                <li>Ensure that the problem statement aligns with one of the hackathon themes.</li>
+                <li>Participants can select a problem statement from the document provided.</li>
+                <li>Participants may also bring their own problem statements, provided they align with one or a mix of the hackathon themes.</li>
               </ul>
               <iframe
                 src={activePdf}

@@ -80,7 +80,7 @@ const Footer = () => {
         <div className="mt-6 md:order-none order-1">
           <img
             src="/logo1.png"
-            className="w-32 mx-auto sm:w-52"
+            className="w-14 mx-auto sm:w-24"
             alt="SRKR logo"
           />
         </div>
