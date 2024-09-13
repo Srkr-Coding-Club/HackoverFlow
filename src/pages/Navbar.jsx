@@ -51,6 +51,14 @@ const Navbar = () => {
           className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
           id="navbar-default"
         >
+          {/* Centered Text for mobile view (inside the dropdown) */}
+          <div className="text-center sm:hidden mt-2">
+            <p className="font-bold text-[0.8rem] text-white">
+              S.R.K.R Engineering College
+            </p>
+            <p className="text-xs text-white">SRKR Coding Club</p>
+          </div>
+
           <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
             <li>
               <ScrollLink
@@ -114,12 +122,6 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </div>
-
-      {/* Centered Text for mobile view (below the logo) */}
-      <div className="text-center sm:hidden -mt-8">
-        <p className="font-bold   text-[0.6rem] text-white">S.R.K.R Engineering College</p>
-        <p className="text-xs text-white">SRKR Coding Club</p>
       </div>
     </nav>
   );
