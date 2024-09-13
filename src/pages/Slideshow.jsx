@@ -3,10 +3,11 @@ import { Carousel } from 'antd';
 
 const Slideshow = () => {
   const images = [
-    '/hackoverflow4.jpg', 
+    
     '/hackoverflow7.jpg',
-    '/hackoverflow6.jpg',
+    '/hackoverflow4.jpg', 
     '/hackoverflow5.jpg',
+    '/hackoverflow1.jpg',
   ];
 
   return (

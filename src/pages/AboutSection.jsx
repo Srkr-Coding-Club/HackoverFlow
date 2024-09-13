@@ -9,7 +9,7 @@ const AboutSection = () => {
   });
 
   // Array of images for the slideshow
-  const images = ["/team.jpg", "/poster.jpg"];
+  const images = ["/team.jpg"];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isFadingOut, setIsFadingOut] = useState(false);
 
@@ -86,7 +86,7 @@ const AboutSection = () => {
         {/* Slideshow Section */}
         <div className="flex items-center justify-center w-full h-auto p-3 bg-gray-600 rounded-lg">
           <img
-            src={images[currentImageIndex]}
+            src="/team.jpg"
             alt="Hackathon Slideshow"
             className={`w-full h-auto object-cover rounded-lg transition-opacity duration-500 ${
               isFadingOut ? "opacity-0" : "opacity-100"
