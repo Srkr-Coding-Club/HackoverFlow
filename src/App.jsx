@@ -11,6 +11,8 @@ import Popup from "./pages/Popup";
 import Query from "./components/Query";
 import Slideshow from "./pages/Slideshow";
 
+import TextScroll from "./pages/TextScroll";
+
 
 const App = () => {
   return (
@@ -18,6 +20,7 @@ const App = () => {
       <Navbar />
       <Popup />
       <Banner />
+      <TextScroll />
       <AboutSection />
       <Themes />
       <Schedule />

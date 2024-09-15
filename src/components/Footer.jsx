@@ -50,28 +50,41 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between w-full max-w-4xl mt-6 text-center">
           {/* Left Side Contacts */}
           <div className="flex-1">
-            <h3 className="text-lg font-semibold sm:text-xl underline">Contact Us</h3>
+            <h3 className="text-lg font-semibold sm:text-xl underline">
+              Contact Us
+            </h3>
             <p className="mt-2 text-sm sm:text-xl">
-              <span className="font-bold">Siva Gopal Varma</span> <br />
-              Phone: <a href="tel:+919951881139">+91 9951881139</a> <br />
+              <span className="font-bold">Avinash</span> <br />
+              Phone: <a href="tel:+919346729461">+91 9346729461</a> <br />
             </p>
             <p className="mt-2 text-sm sm:text-xl">
-              <span className="font-bold">John Sudhakar</span> <br />
-              Phone: <a href="tel:+919849274007"> +91 9849274007</a> <br />
+              <span className="font-bold">Jagadeesh</span> <br />
+              Phone: <a href="tel:+918919317202">+91 8919317202</a>
+              <br />
+            </p>
+            <p className="mt-2 text-sm sm:text-xl">
+              <span className="font-bold">Tarun</span> <br />
+              Phone: <a href="tel:+919959132169"> +919959132169</a> <br />
             </p>
           </div>
 
           {/* Right Side Contacts */}
           <div className="flex-1 mt-6 md:mt-0">
-            <h3 className="text-lg font-semibold sm:text-xl underline">Get in Touch</h3>
+            <h3 className="text-lg font-semibold sm:text-xl underline">
+              Get in Touch
+            </h3>
             <p className="mt-2 text-sm sm:text-xl">
-              <span className="font-bold">Shaik Rafique</span> <br />
-              Phone: <a href="tel:+919381327622">+91 9381327622</a>  <br />
+              <span className="font-bold">Siva Gopal Varma</span> <br />
+              Phone: <a href="tel:919951881139">+91 9951881139</a> <br />
             </p>
             <p className="mt-2 text-sm sm:text-xl">
-              <span className="font-bold">Jagadeesh</span> <br />
-              Phone: <a href="tel:+918919317202">+91 8919317202</a><br />
-            
+              <span className="font-bold">Shaik Rafique</span> <br />
+              Phone: <a href="tel:+919381327622">+91 9381327622</a> <br />
+            </p>
+            <p className="mt-2 text-sm sm:text-xl">
+              <span className="font-bold">Narendra</span> <br />
+              Phone: <a href="tel:+918143628288">+91 8143628288</a>
+              <br />
             </p>
           </div>
         </div>

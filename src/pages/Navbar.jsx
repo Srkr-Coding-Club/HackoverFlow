@@ -134,7 +134,7 @@ const Navbar = () => {
               <li>
                 <button
                   onClick={handleDocsOpen}
-                  className="block py-2 pl-3 pr-4 text-white transition-colors duration-300 border-b-2 border-transparent cursor-pointer hover:text-gray-300 hover:border-blue-400 md:hover:bg-transparent md:border-0 md:p-0"
+                  className="block py-2 pl-3 pr-4  rounded-xl text-red-600 transition-colors duration-300 border-b-2 border-white cursor-pointer hover:font-bold hover:border-blue-400 md:hover:bg-transparent md:border-0 md:p-0"
                 >
                   DOCS
                 </button>
