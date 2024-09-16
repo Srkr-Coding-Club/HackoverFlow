@@ -78,15 +78,18 @@ const Footer = () => {
               Get in Touch
             </h3>
             <p className="mt-2 text-sm sm:text-xl">
-              <span className="font-bold">Siva Gopal Varma</span> <br />
+              <span className="font-bold">Siva Gopal Varma (President)
+              </span> <br />
               Phone: <a href="tel:919951881139">+91 9951881139</a> <br />
             </p>
             <p className="mt-2 text-sm sm:text-xl">
-              <span className="font-bold">Shaik Rafique</span> <br />
+              <span className="font-bold">Shaik Rafique(Event Coordinator)
+              </span> <br />
               Phone: <a href="tel:+919381327622">+91 9381327622</a> <br />
             </p>
             <p className="mt-2 text-sm sm:text-xl">
-              <span className="font-bold">Narendra</span> <br />
+              <span className="font-bold">Narendra Varma(Public Relations)
+              </span> <br />
               Phone: <a href="tel:+918143628288">+91 8143628288</a>
               <br />
             </p>
