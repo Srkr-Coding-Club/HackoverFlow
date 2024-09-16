@@ -154,7 +154,7 @@ const Navbar = () => {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
           <div className="relative w-full max-w-3xl bg-white rounded-lg shadow-lg">
             <div className="flex justify-between items-center p-4 border-b">
-              <h2 className="text-xl font-semibold">Docs</h2>
+              <h2 className="text-xl font-semibold">Instruction</h2>
               <button
                 className="text-red-500 font-bold text-lg"
                 onClick={handleDocsClose}
@@ -163,6 +163,10 @@ const Navbar = () => {
               </button>
             </div>
             <div className="p-4">
+            <ul className="mt-4 text-sm text-red-700 font-bold list-disc list-inside">
+                <li>Participants can select a problem statement from the document provided.</li>
+                <li>Participants may also bring their own problem statements, provided they align with one or a mix of the hackathon themes.</li>
+              </ul>
               <iframe
                 src="/HACKOVERFLOW-2K24-PROBLEM-STATEMENTS.pdf"
                 className="w-full h-96"
