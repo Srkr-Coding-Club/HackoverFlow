@@ -9,7 +9,8 @@ const TextScroll = () => {
       </div>
       <div className="overflow-hidden w-full">
         <Marquee direction="left" speed={60} className="text-red-600 bg-gray-100 font-bold">
-          Participants can bring their own problem statements.
+        Participants can select a problem statement from the document provided.
+        Participants may also bring their own problem statements, provided they align with one or a mix of the hackathon themes.
         </Marquee>
       </div>
     </div>

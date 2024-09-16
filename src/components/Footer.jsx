@@ -64,7 +64,7 @@ const Footer = () => {
             </p>
             <p className="mt-2 text-sm sm:text-xl">
               <span className="font-bold">Tarun</span> <br />
-              Phone: <a href="tel:+919959132169"> +919959132169</a> <br />
+              Phone: <a href="tel:+919959132169"> +91 9959132169</a> <br />
             </p>
           </div>
 
