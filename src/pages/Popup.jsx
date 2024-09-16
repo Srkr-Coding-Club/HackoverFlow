@@ -28,13 +28,13 @@
 //   if (!isVisible) return null;
 
 //   return (
-//     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-//       <div className="bg-white rounded-lg p-3 mx-auto shadow-lg max-w-2xl w-full">
+//     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+//       <div className="w-full max-w-2xl p-3 mx-auto bg-white rounded-lg shadow-lg">
 //         {/* Popup content */}
-//         <div className="mb-6 relative">
+//         <div className="relative mb-6">
 //           {/* {isImageLoading && (
 //             <div className="absolute inset-0 flex items-center justify-center">
-//               <div className="loader border-t-transparent border-solid animate-spin rounded-full border-blue-600 border-4 h-8 w-8"></div>
+//               <div className="w-8 h-8 border-4 border-blue-600 border-solid rounded-full loader border-t-transparent animate-spin"></div>
 //             </div>
 //           )} */}
 //           <img
@@ -51,7 +51,7 @@
 //           <label className="inline-flex items-center">
 //             <input
 //               type="checkbox"
-//               className="form-checkbox text-indigo-600"
+//               className="text-indigo-600 form-checkbox"
 //               checked={isChecked}
 //               onChange={handleCheckboxChange}
 //             />
@@ -86,22 +86,39 @@ const Popup = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-      <div className="bg-white rounded-lg p-3 mx-auto shadow-lg max-w-2xl w-full">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+      <div className="w-full max-w-2xl p-3 mx-auto bg-white rounded-lg shadow-lg">
         {/* Popup content */}
         <div className="mb-6">
-          <h2 className="text-xl font-bold mb-4">Important Steps</h2>
-          <ul className="list-disc pl-5 space-y-2 text-gray-700">
-            <li><strong>Step 1:</strong> PPT Submission: 4th Oct 11:59 PM</li>
-            <li><strong>Step 2:</strong> Evaluation Rounds: 5th-7th Oct</li>
-            <li><strong>Step 3:</strong> Final Registration Ends: 17th Oct 11:59 PM</li>
+          <h2 className="mb-4 text-xl font-bold">Important Steps</h2>
+          <ul className="pl-5 space-y-2 text-gray-700 list-disc">
+            <li>
+              <strong>Step 1:</strong> PPT Submission
+              <strong> (DEAD LINE): </strong>
+              <span className=" text-red-500 font-bold max-[460px]:block text-end">
+                4th Oct 11:59 PM
+              </span>
+            </li>
+            <li>
+              <strong>Step 2:</strong> PPT Evaluation Rounds :
+              <span className=" text-red-500 font-bold max-[460px]:block text-end">
+                5th Oct-7th Oct
+              </span>
+            </li>
+            <li>
+              <strong>Step 3:</strong> Final Registration
+              <strong> (DEAD LINE): </strong>
+              <span className=" text-red-500 font-bold max-[460px]:block text-end">
+                17th Oct 11:59 PM
+              </span>
+            </li>
           </ul>
         </div>
         <div className="mb-4">
           <label className="inline-flex items-center">
             <input
               type="checkbox"
-              className="form-checkbox text-indigo-600"
+              className="text-indigo-600 form-checkbox"
               checked={isChecked}
               onChange={handleCheckboxChange}
             />

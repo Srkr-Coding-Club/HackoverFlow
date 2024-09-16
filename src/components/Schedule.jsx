@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import RightSchedule from "./schedule/RightSchedule";
 import LeftSchedule from "./schedule/LeftSchedule";
@@ -7,7 +7,6 @@ import events from "../constants/timelinelist";
 
 const Schedule = () => {
 
-  const [timelineColor, setTimeLineColor] = useState();
 
   return (
     <>

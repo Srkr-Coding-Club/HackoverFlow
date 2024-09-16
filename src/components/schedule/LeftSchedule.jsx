@@ -28,7 +28,7 @@ const LeftSchedule = (props) => {
         const elementCenter = rect.top + rect.height / 2;
 
         // Define the height of the horizontal line (threshold) around the viewport center
-        const threshold = 225; // Adjust this value as needed
+        const threshold = 300; // Adjust this value as needed
 
         if (
           elementCenter >= viewportHeight / 2 - threshold / 2 &&

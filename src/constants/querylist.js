@@ -6,7 +6,7 @@ const queryList = [
   {
     question: "Who can participate in HACKOVERFLOW?",
     answer:
-      "•	HACKOVERFLOW is open to a diverse range of participants, including students, and individuals with varying skill levels. Both beginners and experienced developers are welcome.",
+      "HACKOVERFLOW it welcomes a diverse group of  students of all skill levels, especially those eager to explore and gain knowledge.",
   },
   {
     question:
@@ -22,7 +22,7 @@ const queryList = [
   {
     question: "Can team members be from different colleges?",
     answer:
-      "Yes,team members from different colleges are allowed and encouraged to collaborate.",
+      "Team members from different colleges are encouraged and allowed to collaborate.",
   },
   {
     question: "When and where will HACKOVERFLOW take place?",
@@ -50,7 +50,6 @@ o	2nd Prize: ₹9,000
 o	3rd Prize: ₹6,000
 `,
   },
- 
 ];
 
 export default queryList;
