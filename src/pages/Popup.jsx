@@ -102,6 +102,7 @@ const Popup = () => {
             <li>
               <strong>Step 2:</strong> PPT Evaluation Rounds :
               <span className=" text-red-500 font-bold max-[460px]:block text-end">
+                {" "}
                 5th Oct-7th Oct
               </span>
             </li>
