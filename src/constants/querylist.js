@@ -33,7 +33,7 @@ const queryList = [
     question: "What is the schedule for the judging rounds at HACKOVERFLOW?",
     answer: `
     The hackathon includes 3 judging rounds:
-      -> PPT Round: Teams must submit their PowerPoint presentations by September 30, with a fee of ₹100 per team.
+      -> PPT Round: Teams must submit their PowerPoint presentations by October 4, with a fee of ₹100 per team.
       -> Hackathon Fee: Teams selected from the PPT round will pay a fee of ₹850 per head. T-shirt sizes will be collected during registration.
     `,
   },
