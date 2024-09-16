@@ -54,17 +54,21 @@ const Footer = () => {
               Contact Us
             </h3>
             <p className="mt-2 text-sm sm:text-xl">
-              <span className="font-bold">Avinash</span> <br />
+              <span className="font-bold">Avinash(Tech Lead)</span> <br />
               Phone: <a href="tel:+919346729461">+91 9346729461</a> <br />
             </p>
             <p className="mt-2 text-sm sm:text-xl">
-              <span className="font-bold">Jagadeesh</span> <br />
+              <span className="font-bold">Jagadeesh(Tech Lead)</span> <br />
               Phone: <a href="tel:+918919317202">+91 8919317202</a>
               <br />
             </p>
             <p className="mt-2 text-sm sm:text-xl">
-              <span className="font-bold">Tarun</span> <br />
+              <span className="font-bold">Tarun(Tech Team Representative)</span> <br />
               Phone: <a href="tel:+919959132169"> +91 9959132169</a> <br />
+            </p>
+            <p className="mt-2 text-sm sm:text-xl">
+              <span className="font-bold">Rama Raju(Tech Team Representative)</span> <br />
+              Phone: <a href="tel:+919392419558">+91 9392419558</a> <br />
             </p>
           </div>
 
@@ -91,12 +95,13 @@ const Footer = () => {
 
         {/* Footer Logo (Placed below contact details in mobile view) */}
         <div className="mt-6 md:order-none order-1">
-          <img
-            src="/bottomlogo.png"
-            className="w-36 mx-auto sm:w-52"
-            alt="SRKR logo"
-          />
-        </div>
+  <img
+    src="/bottomlogo.png"
+    className="w-36 mx-auto sm:w-44 rounded filter brightness-200 contrast-150 drop-shadow-lg"
+    alt="SRKR logo"
+  />
+</div>
+
 
         {/* Copyright Section */}
         <p className="mt-4 text-xs text-balance sm:text-[10px]">

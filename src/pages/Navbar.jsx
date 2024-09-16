@@ -24,7 +24,7 @@ const Navbar = () => {
                 src="/logo1.png"
                 width={60}
                 height={60}
-                className="rounded bg-slate-50 opacity-90 shadow-white shadow-inner"
+                className="rounded filter brightness-200 contrast-150 drop-shadow-lg"
                 alt="Logo"
               />
             </a>

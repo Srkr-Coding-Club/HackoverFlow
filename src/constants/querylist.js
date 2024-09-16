@@ -6,7 +6,7 @@ const queryList = [
   {
     question: "Who can participate in HACKOVERFLOW?",
     answer:
-      "•	HACKOVERFLOW is open to a diverse range of participants, including students, professionals, and individuals with varying skill levels. Both beginners and experienced developers are welcome.",
+      "•	HACKOVERFLOW is open to a diverse range of participants, including students, and individuals with varying skill levels. Both beginners and experienced developers are welcome.",
   },
   {
     question:
