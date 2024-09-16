@@ -37,18 +37,20 @@ const Navbar = () => {
 
           {/* Hamburger Menu Button */}
           <div className="flex md:hidden items-center">
-            {/* Mobile Problem Statements Button */}
-            <button
-              onClick={handleDocsOpen}
-              className="py-2 px-4 bg-red-600 text-white font-bold rounded-lg hover:bg-red-700 transition-colors"
-            >
-              Problem Statements
-            </button>
+            {/* Mobile Problem Statements Button (only when the menu is closed) */}
+            {!isOpen && (
+              <button
+                onClick={handleDocsOpen}
+                className="py-2 px-4 bg-red-600 text-white font-bold rounded-lg hover:bg-red-700 transition-colors"
+              >
+                Problem Statements
+              </button>
+            )}
 
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="ml-4 inline-flex items-center p-2 text-sm text-white rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              className="ml-4 inline-flex items-center p-2 text-sm text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-expanded={isOpen ? "true" : "false"}
             >
               <svg
@@ -81,7 +83,7 @@ const Navbar = () => {
                   Problem Statements
                 </button>
               </li>
-              
+
               <li>
                 <ScrollLink
                   to="about"
