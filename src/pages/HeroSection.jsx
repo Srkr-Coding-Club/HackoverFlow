@@ -54,7 +54,7 @@ const Banner = () => {
           {/* Register Now Button */}
           <a
             // href="https://docs.google.com/forms/d/e/1FAIpQLSdVyjJdFcq6N0cF77GUCD1Uag61aYVizyVm-Y0PMbTMCQmbig/formResponse"
-            href='https://scc-hackoverflow.vercel.app' target='_blank'
+            href='https://forms.gle/XuPZN1aBkxoofAqG7' target='_blank'
             className="px-10 py-3 bg-white text-gray-900 font-bold rounded-full shadow-lg hover:bg-gray-900 hover:text-white hover:border-white hover:border-2 transition-colors duration-300"
           >
             Register Now
