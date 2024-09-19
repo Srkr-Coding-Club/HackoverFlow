@@ -51,9 +51,10 @@ const Footer = () => {
           {/* Left Side Contacts */}
           <div className="flex-1">
             <h3 className="text-lg font-semibold sm:text-xl underline">
-              Contact Us
-            </h3>
-            <p className="mt-2 text-sm sm:text-xl">
+              Email Us
+          </h3>
+          <a className="mt-2 text-sm text-white sm:text-xl" href="mailto:srkrcodingclub@gmail.com">srkrcodingclub@gmail.com</a>
+              {/* <p className="mt-2 text-sm sm:text-xl">
               <span className="font-bold">Avinash(Tech Lead)</span> <br />
               Phone: <a href="tel:+919346729461">+91 9346729461</a> <br />
             </p>
@@ -69,7 +70,7 @@ const Footer = () => {
             <p className="mt-2 text-sm sm:text-xl">
               <span className="font-bold">Rama Raju(Tech Team Representative)</span> <br />
               Phone: <a href="tel:+919392419558">+91 9392419558</a> <br />
-            </p>
+            </p> */}
           </div>
 
           {/* Right Side Contacts */}

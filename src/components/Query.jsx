@@ -19,7 +19,7 @@ const Query = () => {
         <div className="flex items-center justify-center w-full h-full max-lg:hidden">
           <img
             src="/about.png"
-            className=" h-2/4 scale-x-[-1] drop-shadow-3xl"
+            className=" max-h-min  scale-x-[-1] drop-shadow-3xl"
           />
         </div>
       </div>

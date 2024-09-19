@@ -1,55 +1,71 @@
 const queryList = [
   {
-    question: "What is the name of the hackathon?",
-    answer: "The name of the hackathon is HACKOVERFLOW.",
-  },
-  {
-    question: "Who can participate in HACKOVERFLOW?",
+    question: "Who can participate in HackOverflow?",
     answer:
-      "HACKOVERFLOW it welcomes a diverse group of  students of all skill levels, especially those eager to explore and gain knowledge.",
+      "HackOverflow welcomes participation from students across a wide range of colleges, offering them the opportunity to compete, collaborate, and showcase their skills alongside peers from diverse educational backgrounds.",
   },
   {
     question:
-      "Will travel reimbursement be provided for offline participants of HACKOVERFLOW?",
+      "What is the allowed team size, and can team members be from different colleges?",
     answer:
-      "No, travel reimbursement is not provided. Participants are responsible for their own travel expenses.",
+      "The team size can range from a minimum of 3 to a maximum of 6 members, and participants can form teams with members from different colleges.",
   },
   {
-    question: "What is the allowed team size for HACKOVERFLOW?",
+    question: "What is the schedule for HackOverflow?",
     answer:
-      "Teams can consist of a minimum of 3 participant and a maximum of 6 participants.",
+      "The last date for registration is October 11, 2024. The hackathon will take place on the 18th and 19th of October 2024.",
   },
   {
-    question: "Can team members be from different colleges?",
+    question: "What is the total prize pool?",
+    answer: `The total prize pool for HackOverflow is ₹30,000, which will be split as follows:
+• 1st Place: ₹15,000
+• 2nd Place: ₹10,000
+• 3rd Place: ₹5,000
+`,
+  },
+  {
+    question: "Is accommodation provided for participants?",
     answer:
       "Team members from different colleges are encouraged and allowed to collaborate.",
   },
   {
-    question: "When and where will HACKOVERFLOW take place?",
+    question: "What are the travel options near the venue?",
     answer:
-      "HACKOVERFLOW will start at 10:00 AM on October 25 and end at 10:00 AM on October 26. The event will be held at SRKR Engineering College, Chinna Amiram, Bhimavaram, Andhra Pradesh 534204.",
+      "Participants have the option to travel by either train or bus. The closest transportation hubs are Bhimavaram Town Railway Station and Bhimavaram Bus Stand, both conveniently located for easy access to the hackathon venue.",
   },
   {
-    question: "What is the schedule for the judging rounds at HACKOVERFLOW?",
+    question: "Will there be certificates for participation?",
     answer: `
-    The hackathon includes 3 judging rounds:
-      -> PPT Round: Teams must submit their PowerPoint presentations by October 4, with a fee of ₹100 per team.
-      -> Hackathon Fee: Teams selected from the PPT round will pay a fee of ₹850 per head. T-shirt sizes will be collected during registration.
+   All participants will receive certificates of participation, which will be sent to them via email, recognizing their involvement and contribution to the HackOverflow event.
     `,
   },
   {
-    question: "What are the deadlines for registration?",
+    question: "Can teams change their members after registration?",
     answer:
-      "Registration will close on October 11, and T-shirt sizes will be collected during registration.",
+      "No, teams cannot change their members after registration.",
   },
   {
-    question: "What is the total prize pool for HACKOVERFLOW?",
-    answer: `The total prize pool is ₹30,000 INR, with prizes distributed as follows:
-o 1st Prize: ₹15,000 
-o 2nd Prize: ₹9,000
-o 3rd Prize: ₹6,000
+    question: "What are the communication channels for participants to reach out to the organizing team?",
+    answer: `
+Participants can reach out for any inquiries via email at srkrcodingclub@gmail.com. Alternatively, they can contact us directly by phone:
+- Avinash (Tech Lead): +91 9346729461
+- Jagadeesh (Tech Lead): +91 8919317202
+- Tarun (Tech Team Representative): +91 9959132169
 
+Feel free to reach out, and we're here to help you with any questions or concerns you might have.
 `,
+  },
+  {
+    question:"Are there social media or online platforms where participants can follow event updates?",
+    answer:"Yes, you can follow our Instagram handle for event updates: https://www.instagram.com/srkr_coding_club?igsh=MTVycDY4cGs3d3I0ZA==",
+  },
+  {
+    question:"Will there be any hardware available for participants to use during the hackathon?",
+    answer:"Yes, computers will be available for participants to use during the hackathon. However, participants are strongly encouraged and advised to bring their own equipment to the venue to ensure a smoother, more personalized experience and to avoid any potential mishaps or technical issues during the event.",
+  },
+  {
+    question:"Will there be internet access during the event?",
+    answer:"Yes, there will be internet access available during the event to ensure that participants can work efficiently and access any online resources they may need.",
   },
 ];
 

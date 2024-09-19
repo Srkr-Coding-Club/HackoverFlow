@@ -10,9 +10,7 @@ const AboutSection = () => {
 
   return (
     <div ref={ref} className="px-5 py-10 text-white" id="about">
-      <h2 className="mb-10 text-5xl font-bold text-center titles">
-        What is HackOverFlow
-      </h2>
+     
       <div className="flex flex-col items-center justify-center space-y-8 font-bold md:flex-row md:space-y-0 md:space-x-8">
         {/* First card */}
         <div className="flex flex-col items-center p-4 text-center bg-gray-700 rounded-lg w-56 h-[7.5rem]">
@@ -42,6 +40,9 @@ const AboutSection = () => {
       <div className="grid gap-8 mt-10 font-medium md:grid-cols-2">
         <div className="flex items-center justify-center h-full p-6 bg-gray-700 rounded-lg">
           <div className="max-w-lg overflow-y-auto text-white">
+          <h2 className="mb-10 text-4xl font-bold text-center titles">
+        What is HackOverFlow
+      </h2>
             <p className="mb-4 text-lg">
               HackOverFlow is a 24-hour national hackathon hosted by the{" "}
               <strong>SRKR Coding Club</strong> from the renowned{" "}
