@@ -68,19 +68,15 @@
 import React, { useState, useEffect } from "react";
 
 const Popup = () => {
-  const [isChecked, setIsChecked] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    // Set popup visible every time the page loads
+   
     setIsVisible(true);
   }, []);
 
-  const handleCheckboxChange = (event) => {
-    setIsChecked(event.target.checked);
-    if (event.target.checked) {
-      setIsVisible(false); // Close the popup when checkbox is checked
-    }
+  const handleClose = () => {
+    setIsVisible(false); 
   };
 
   if (!isVisible) return null;
@@ -93,38 +89,28 @@ const Popup = () => {
           <h2 className="mb-4 text-xl font-bold">Important Steps</h2>
           <ul className="pl-5 space-y-2 text-gray-700 list-disc">
             <li>
-              <strong>Step 1:</strong> PPT Submission
-              <strong> (DEAD LINE): </strong>
-              <span className=" text-red-500 font-bold max-[460px]:block text-end">
-                4th Oct 11:59 PM
+              Final Registration (DEADLINE):
+              <span className="text-red-500 font-bold max-[460px]:block text-end">
+                11th Oct 11:59 PM
               </span>
             </li>
             <li>
-              <strong>Step 2:</strong> PPT Evaluation Rounds :
-              <span className=" text-red-500 font-bold max-[460px]:block text-end">
-                {" "}
-                5th Oct-7th Oct
-              </span>
+              Participants can select a problem statement from the document
+              provided.
             </li>
             <li>
-              <strong>Step 3:</strong> Final Registration
-              <strong> (DEAD LINE): </strong>
-              <span className=" text-red-500 font-bold max-[460px]:block text-end">
-                17th Oct 11:59 PM
-              </span>
+              Participants may also bring their own problem statements, provided
+              they align with one or a mix of the hackathon themes.
             </li>
           </ul>
         </div>
         <div className="mb-4">
-          <label className="inline-flex items-center">
-            <input
-              type="checkbox"
-              className="text-indigo-600 form-checkbox"
-              checked={isChecked}
-              onChange={handleCheckboxChange}
-            />
-            <span className="ml-2">I agree to the Steps.</span>
-          </label>
+          <button
+            onClick={handleClose}
+            className="font-bold text-white px-6 py-2 rounded-xl bg-red-500 hover:bg-red-600 transition-all duration-300 ease-in-out shadow-lg"
+          >
+            Close
+          </button>
         </div>
       </div>
     </div>

@@ -40,14 +40,15 @@ const queryList = [
   {
     question: "What are the deadlines for registration?",
     answer:
-      "•	Registration will close on October 17, and T-shirt sizes will be collected during registration.",
+      "Registration will close on October 11, and T-shirt sizes will be collected during registration.",
   },
   {
     question: "What is the total prize pool for HACKOVERFLOW?",
     answer: `The total prize pool is ₹30,000 INR, with prizes distributed as follows:
-o	1st Prize: ₹15,000
-o	2nd Prize: ₹9,000
-o	3rd Prize: ₹6,000
+o 1st Prize: ₹15,000 
+o 2nd Prize: ₹9,000
+o 3rd Prize: ₹6,000
+
 `,
   },
 ];

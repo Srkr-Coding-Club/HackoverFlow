@@ -3,7 +3,7 @@ import Countdown from 'react-countdown';
 import { Link as ScrollLink } from 'react-scroll';  // Import react-scroll Link
 
 const Banner = () => {
-  const countdownDate = new Date('2024-10-25T00:00:00').getTime();
+  const countdownDate = new Date('2024-10-18T00:00:00').getTime();
 
   const [isModalOpen, setIsModalOpen] = useState(false); // State to handle modal visibility
 
@@ -35,7 +35,7 @@ const Banner = () => {
       <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left md:ml-10">
         <h1 className="text-3xl mt-20 font-serif">SRKR CODING CLUB PRESENTS</h1>
         <h1 className="md:text-5xl text-4xl font-semibold mb-4 titles">HACK OVERFLOW~2K24</h1>
-        <p className="text-2xl mb-2 font-bold">25 - 26TH OCT</p>
+        <p className="text-2xl mb-2 font-bold">18 - 19TH OCT</p>
         <p className="text-xl mb-8">HACK FOR A CHANGE !</p>
         <Countdown date={countdownDate} renderer={renderer} />
 
@@ -53,7 +53,8 @@ const Banner = () => {
 
           {/* Register Now Button */}
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdVyjJdFcq6N0cF77GUCD1Uag61aYVizyVm-Y0PMbTMCQmbig/formResponse"
+            // href="https://docs.google.com/forms/d/e/1FAIpQLSdVyjJdFcq6N0cF77GUCD1Uag61aYVizyVm-Y0PMbTMCQmbig/formResponse"
+            href='https://scc-hackoverflow.vercel.app' target='_blank'
             className="px-10 py-3 bg-white text-gray-900 font-bold rounded-full shadow-lg hover:bg-gray-900 hover:text-white hover:border-white hover:border-2 transition-colors duration-300"
           >
             Register Now

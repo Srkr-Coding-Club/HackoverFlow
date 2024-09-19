@@ -1,8 +1,9 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
+import CountUp from "react-countup";
 
 const AboutSection = () => {
-  const { ref } = useInView({
+  const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
@@ -15,20 +16,26 @@ const AboutSection = () => {
       <div className="flex flex-col items-center justify-center space-y-8 font-bold md:flex-row md:space-y-0 md:space-x-8">
         {/* First card */}
         <div className="flex flex-col items-center p-4 text-center bg-gray-700 rounded-lg w-56 h-[7.5rem]">
-          <span className="text-2xl text-cyan-500">4th Oct 11:59 PM</span>
-          <span className="text-xl">PPT Submission</span>
+          <span className="text-4xl text-cyan-500">
+            {inView && <CountUp start={0} end={3} duration={2} />}
+          </span>
+          <span className="text-xl">Themes</span>
         </div>
-        
+
         {/* Second card */}
         <div className="flex flex-col items-center p-4 text-center bg-gray-700 rounded-lg w-52">
-          <span className="text-xl text-pink-500">5th, 6th, 7th Oct</span>
-          <span className="text-xl">Evaluation Rounds</span>
+          <span className="text-4xl text-pink-500">
+            {inView && <CountUp start={0} end={24} duration={2} />}
+          </span>
+          <span className="text-xl">Hours of Hacking</span>
         </div>
 
         {/* Third card */}
         <div className="flex flex-col items-center p-4 text-center bg-gray-700 rounded-lg w-52">
-          <span className="text-xl text-orange-500">17th Oct 11:59 PM</span>
-          <span className="text-xl">Final Registration Ends</span>
+          <span className="text-4xl text-orange-500">
+            {inView && <CountUp start={0} end={1000} duration={2} separator="," suffix="+" />}
+          </span>
+          <span className="text-xl">Participants</span>
         </div>
       </div>
 
