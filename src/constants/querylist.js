@@ -26,7 +26,7 @@ const queryList = [
   {
     question: "Is accommodation provided for participants?",
     answer:
-      "Team members from different colleges are encouraged and allowed to collaborate.",
+      "Participants traveling from distant locations will be provided with accommodation for added convenience. This accommodation will be available for one night, specifically the day before the hackathon, ensuring they are well-rested and prepared for the event.",
   },
   {
     question: "What are the travel options near the venue?",
