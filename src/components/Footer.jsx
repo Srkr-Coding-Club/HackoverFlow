@@ -2,6 +2,8 @@ import React from "react";
 import Facebook from "../assets/facebook.svg";
 import YouTube from "../assets/icons8-youtube.svg";
 import Instagram from "../assets/icons8-instagram.svg";
+import Twitter from "../assets/icons8-twitterx.svg";
+import Github from '../assets/github.svg'
 import LinkedIn from "../assets/linkedin-svgrepo-com.svg";
 
 const Footer = () => {
@@ -13,11 +15,27 @@ const Footer = () => {
           <h3 className="text-lg font-semibold">Connect with Us</h3>
           <div className="flex items-center gap-3 mt-2">
             <a
-              href="https://www.facebook.com/profile.php?id=61552039587620&mibextid=ZbWKwL"
+              href="https://www.facebook.com/profile.php?id=61565827274771"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img className="h-4" src={Facebook} alt="Facebook" />
+            </a>
+            <span className="font-semibold">/</span>
+            <a
+              href="https://x.com/srkrcodingclub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className="h-4" src={Twitter} alt="Twitter" />
+            </a>
+            <span className="font-semibold">/</span>
+            <a
+              href="https://github.com/Srkr-Coding-Club"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className="h-4" src={Github} alt="Github" />
             </a>
             <span className="font-semibold">/</span>
             <a
