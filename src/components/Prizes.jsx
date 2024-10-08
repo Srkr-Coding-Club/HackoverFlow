@@ -1,5 +1,7 @@
+// Prizes.js
 import React from "react";
 import PriceItem from "./prizes/PriceItem";
+import BenefitsCard from "./prizes/BenefitsCard"; // Import the BenefitsCard
 
 const Prizes = () => {
   return (
@@ -15,9 +17,9 @@ const Prizes = () => {
         </h2>
         <div className="grid justify-center max-[800px]:grid-cols-1 grid-cols-3 w-fit ">
           <PriceItem rank={1} />
+          <BenefitsCard /> {/* Add the BenefitsCard here */}
           <PriceItem rank={2} />
           <PriceItem rank={3} />
-          {/* <PriceItem /> */}
         </div>
       </div>
     </>
@@ -25,5 +27,3 @@ const Prizes = () => {
 };
 
 export default Prizes;
-
-//max-[1180px]:grid-cols-1

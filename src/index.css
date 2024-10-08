@@ -64,3 +64,9 @@ body {
 .animate-left {
   animation: slide-right 1s ease-in-out;
 }
+
+
+.benefitcard{
+  background: rgba(55, 65, 81, 0.6);
+
+}
