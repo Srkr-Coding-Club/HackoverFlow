@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Starting from './pages/Starting'
 import Timer from './pages/Timer'
-import Particle from './pages/Particle'
 
 const App = () => {
   return (
