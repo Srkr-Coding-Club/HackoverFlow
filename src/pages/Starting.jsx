@@ -9,8 +9,7 @@ import Popup from "./Popup";
 import Slideshow from "./Slideshow";
 import TextScroll from "./TextScroll";
 import Themes from "./Themes";
-
-
+import Sponsor from "../components/Sponsors";
 
 const Starting = () => {
   return (
@@ -23,8 +22,8 @@ const Starting = () => {
       <Themes />
       <Schedule />
       <Prizes />
-      <Slideshow/>
-      {/* <Sponcers /> */}
+      <Slideshow />
+      <Sponsor />
       <Query />
       <Footer />
     </>
