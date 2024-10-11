@@ -12,12 +12,12 @@ const Prizes = () => {
         <h1 className="text-5xl font-semibold text-center text-white titles">
           Prizes
         </h1>
-        <h2 className="sm:text-3xl text-lg font-bold text-orange-300 ">
+        <h2 className="text-lg font-bold text-orange-300 sm:text-3xl ">
           A Grand Prize Pool of ₹30,000
         </h2>
         <div className="grid justify-center max-[800px]:grid-cols-1 grid-cols-3 w-fit ">
           <PriceItem rank={1} />
-          <BenefitsCard /> {/* Add the BenefitsCard here */}
+          {/*<BenefitsCard />*/} {/* Add the BenefitsCard here */}
           <PriceItem rank={2} />
           <PriceItem rank={3} />
         </div>
