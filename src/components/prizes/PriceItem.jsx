@@ -67,7 +67,7 @@ const PriceItem = (props) => {
         {awardList.length > 3 ? (
           <button
             onClick={() => setIsFlipped(true)}
-            className="px-10 max-[1100px]:text-sm max-[1100px]:px-7 max-[1100px]:py-[0.42rem] py-2 mb-2 text-lg font-semibold text-white bg-black rounded-full w-fit">
+            className="px-10 max-[1100px]:text-sm max-[1100px]:px-7 max-[1100px]:py-[0.42rem] py-2 mb-2 text-lg font-semibold text-white bg-[#232323] rounded-full w-fit">
             More
           </button>
         ) : (
@@ -86,7 +86,7 @@ const PriceItem = (props) => {
         </ul>
         <button
           onClick={() => setIsFlipped(false)}
-          className="px-10 max-[1100px]:text-sm max-[1100px]:px-7 max-[1100px]:py-[0.42rem] py-2 mb-2 text-lg font-semibold text-white bg-black rounded-full w-fit">
+          className="px-10 max-[1100px]:text-sm max-[1100px]:px-7 max-[1100px]:py-[0.42rem] py-2 mb-2 text-lg font-semibold text-white bg-[#232323]  rounded-full w-fit">
           Back
         </button>
         <div className="absolute w-[150%] rounded-full aspect-square bg-[#232323] -z-10 translate-y-[-65%]"></div>
